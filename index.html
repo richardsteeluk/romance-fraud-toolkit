@@ -8,8 +8,14 @@
     <meta charset="utf-8">
     <meta name="author" content="Who's the author?">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://www.essex.ac.uk/assets/dist/app.css?637957169960000000">
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -17,63 +23,183 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+
 </head>
 
 <body>
 
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
+        @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+        .lead {
+            font-size: 1.6rem;
         }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+        #about-project {
+            background-image: url("https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+            background-size: cover;
+            /* <------ */
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* optional, center the image */
+        }
+
+        #about-project-description {
+            color: #fff;
+            font-size: 1.4rem;
+        }
+
+        #section1Title {
+            background-image: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+            background-size: cover;
+            /* <------ */
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* optional, center the image */
+        }
+
+        #section2Title {
+            background-image: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+            background-size: cover;
+            /* <------ */
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* optional, center the image */
+        }
+
+        #section3Title {
+            background-image: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+            background-size: cover;
+            /* <------ */
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* optional, center the image */
+        }
+
+        .h2 {
+            font-weight: 700;
+        }
+
+        .button--primary {
+            color: black;
         }
     </style>
 
     <!-- Introduction -->
 
-    <div class="bg-dark text-secondary px-4 py-5 text-center">
-        <div class="py-5">
-            <h1 class="display-5 fw-bold text-white">About Our Project</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                    world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
-                    grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+    <div class="header header--big header--offset"
+        style="background-image: url(&quot;https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80&quot;); margin-top: 0;">
+        <div class="header__container container">
+            <div class="header__content">
+                <a href="/" class="main-nav__logo"><svg width="237" height="100" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 178 75" enable-background="new 0 0 178 75" xml:space="preserve"
+                        class="main-nav__svg">
+                        <title>University of Essex homepage</title>
+                        <rect x="30" width="15" height="15"></rect>
+                        <rect x="15" y="15" width="15" height="15"></rect>
+                        <rect x="30" y="30" width="15" height="15"></rect>
+                        <rect x="15" y="45" width="15" height="15"></rect>
+                        <rect x="30" y="60" width="15" height="15"></rect>
+                        <path d="M86.1,21c-1.7,0-3,1-3.7,2.5h0v-2.2h-1.7v12.1h1.8v-6.3c0-1.2,0.2-2.3,0.9-3.3c0.6-0.8,1.5-1.2,2.5-1.2
+					c0.8,0,1.7,0.4,2.1,1.1c0.4,0.6,0.3,1.5,0.3,2.2v7.5h1.8v-6.7c0-1.2,0-2.8-0.6-3.8C88.8,21.7,87.6,21,86.1,21z M94.2,33.4V21.4
+					h-1.8v12.1H94.2z M94.3,17.1h-2v2.1h2V17.1z M121.1,27.3c0-1,0.1-1.7,0.6-2.6c0.7-1.2,1.7-1.9,3.1-1.9h0.4v-1.8l-0.7,0
+					c-1.9,0-3,1.5-3.5,3.2h0v-2.8h-1.7v12.1h1.8V27.3z M131,32.1c-1.4,0-3.4-0.6-3.6-2.3l-1.8,0.4c0.6,2.5,2.9,3.4,5.3,3.4
+					c2.3,0,5-1,5-3.7c0-1.1-0.5-2.1-1.4-2.7c-0.7-0.5-1.6-0.7-2.5-0.8l-1.7-0.3c-1.1-0.2-2.1-0.5-2.1-1.8c0-1.3,1.5-1.8,2.6-1.8
+					c1.4,0,2.6,0.6,3.1,1.9l1.7-0.4c-0.6-2.2-2.6-3-4.7-3c-2.2,0-4.5,1-4.5,3.5c0,2.1,1.7,3,3.5,3.4l2,0.4c1,0.2,2.3,0.5,2.3,1.8
+					C133.9,31.7,132.3,32.1,131,32.1z M139.8,33.4V21.4h-1.8v12.1H139.8z M139.9,17.1h-2v2.1h2V17.1z M79.2,45.9h-2.1v1.5h2.1V58h1.8
+					V47.4h2.8v-1.5h-2.8c0-1.5,0-3,2-3c0.5,0,1,0.1,1.5,0.2l0.4-1.5l-1.7-0.2C80.4,41.2,79.1,43.4,79.2,45.9z M92.4,50.3h6.4v-1.6
+					h-6.4v-5.2h8.1v-1.8H90.3V58h10.5v-1.8h-8.4V50.3z M110.5,51.8c-0.7-0.5-1.6-0.7-2.5-0.8l-1.7-0.3c-1.1-0.2-2.1-0.5-2.1-1.8
+					c0-1.3,1.5-1.8,2.5-1.8c1.4,0,2.6,0.6,3.1,1.9l1.7-0.4c-0.6-2.2-2.6-3-4.7-3c-2.2,0-4.5,1-4.5,3.5c0,2.1,1.7,3,3.5,3.3l2,0.4
+					c1,0.2,2.3,0.5,2.3,1.8c0,1.5-1.6,2-2.9,2c-1.4,0-3.4-0.6-3.6-2.3l-1.8,0.4c0.6,2.5,2.9,3.4,5.3,3.4c2.3,0,5-1,5-3.7
+					C111.9,53.4,111.5,52.4,110.5,51.8z M122,51.8c-0.7-0.5-1.6-0.7-2.5-0.8l-1.7-0.3c-1.1-0.2-2.1-0.5-2.1-1.8c0-1.3,1.5-1.8,2.6-1.8
+					c1.4,0,2.6,0.6,3.1,1.9l1.7-0.4c-0.6-2.2-2.6-3-4.7-3c-2.2,0-4.5,1-4.5,3.5c0,2.1,1.7,3,3.5,3.3l2,0.4c1,0.2,2.3,0.5,2.3,1.8
+					c0,1.5-1.6,2-2.9,2c-1.4,0-3.4-0.6-3.6-2.3l-1.8,0.4c0.6,2.5,2.9,3.4,5.3,3.4c2.3,0,5-1,5-3.7C123.5,53.4,123,52.4,122,51.8z
+					 M130.1,45.6c-3.6,0-5.6,3-5.6,6.4c0,3.4,1.9,6.3,5.5,6.3c2.3,0,4.4-1.3,5.1-3.5l-1.8-0.4c-0.5,1.4-1.7,2.3-3.2,2.3
+					c-1.3,0-2.5-0.7-3.1-1.8c-0.4-0.9-0.5-1.8-0.5-2.7h8.7C135.5,48.8,133.9,45.6,130.1,45.6z M126.7,50.7c0.1-1.9,1.4-3.7,3.4-3.7
+					c2.1,0,3.2,1.7,3.2,3.7H126.7z M117.1,30.1l-1.8-0.4c-0.5,1.4-1.7,2.3-3.2,2.3c-1.3,0-2.5-0.7-3.1-1.8c-0.4-0.9-0.5-1.8-0.5-2.7
+					h8.7c0.1-3.4-1.5-6.5-5.3-6.5c-3.6,0-5.6,3-5.6,6.4c0,3.4,1.9,6.3,5.5,6.3C114.3,33.7,116.4,32.4,117.1,30.1z M112.1,22.5
+					c2.1,0,3.2,1.7,3.2,3.7h-6.6C108.7,24.3,110,22.5,112.1,22.5z M71.4,45.6c-3.6,0-5.5,2.9-5.5,6.2c0,3.2,1.6,6.4,5.2,6.4
+					c3.6,0,5.6-3,5.6-6.3C76.7,48.7,74.9,45.6,71.4,45.6z M74,55c-0.6,1.1-1.5,1.7-2.8,1.7c-1.1,0-2.1-0.6-2.6-1.5
+					c-0.5-1-0.7-2.2-0.7-3.3c0-1,0.1-2.1,0.6-3c0.5-1,1.6-1.7,2.7-1.7c1,0,2,0.5,2.6,1.4c0.6,1,0.8,2.2,0.8,3.3
+					C74.6,52.9,74.5,54,74,55z M78.5,17.1h-2v10.3c0,1,0,2.3-0.7,3.2c-0.7,0.9-2.4,1.2-3.6,1.3c-1.2,0-2.6-0.3-3.3-1.3
+					c-0.7-0.9-0.7-2.2-0.7-3.2V17.1h-2.3v10.3c0,1.7,0.1,3.3,1.4,4.7c1.2,1.2,3.1,1.6,4.8,1.6h0c1.8,0,3.6-0.3,4.8-1.6
+					c1.3-1.3,1.4-3,1.4-4.7V17.1z M145.5,46L145.5,46l-1.9-0.1l0,0L141,50l-2.5-4.1h-2.2l3.6,5.8l-4,6.3l-0.1,0.1h1.9l0,0l3.1-4.9
+					l3,4.9h2.2l-4.1-6.7L145.5,46z M101.9,33.5l4.1-12.1l0-0.1h-1.8l0,0l-3.3,9.8l-3.3-9.8h-2.1l4.3,12.1L101.9,33.5z M157.8,21.3
+					L157.8,21.3l-3.3,9.1l-3.2-9l-5.7,0V17l-1.8,0.2v4.2h-2.1v1.5h2.1v6.7c0,2.4,0.8,3.9,3.4,3.9l1.8-0.1v-1.5l-1.4,0.1
+					c-1.5,0-1.9-0.7-1.9-2.1v-7h4.3l0,0l3.6,10.4l-0.1,0.4c-0.4,1.3-0.9,2.5-2.5,2.5c-0.4,0-0.8-0.1-1.2-0.2l-0.1,0v1.6l0,0
+					c0.4,0.1,0.9,0.2,1.4,0.2c1.1,0,1.7-0.1,2.5-0.9c0.7-0.7,0.9-1.4,1.2-2.3c0,0,4.7-13.2,4.7-13.2l0-0.1H157.8z"
+                            class="main-nav__svg-text"></path>
+                    </svg></a>
+                <div class="breadcrumb"><a href="/" class="breadcrumb__item"><svg width="20" height="20"
+                            class="icon breadcrumb__icon">
+                            <title>University of Essex homepage</title>
+                            <use xlink:href="#icon-home"></use>
+                        </svg></a> <span class="breadcrumb__divider"></span> <a
+                        href="https://www.essex.ac.uk/research-projects" class="breadcrumb__item">
+                        Research Projects
+                    </a> <span class="breadcrumb__divider"></span> <span class="breadcrumb__item">
+                        Holding Hands
+                    </span></div>
+                <div class="page-title muted-red">Research Project</div>
+                <div class="responsive-font" style="font-size: 10px;">
+                    <h1 class="page-subtitle page-subtitle--big"><b>Romance Fraud Toolkit Name Here</b></h1>
                 </div>
+                <div class="header__profile">
+                    <div class="small-title">Principal Investigators</div>
+                </div>
+                <div class="principal-investigator"> Prof. Róisín Ryan-Flood
+                    <br>
+                    Name here
+                    <br>
+                    Name here <br>
+                </div>
+            </div>
+            <div class="header__image"><img
+                    src="https://images.unsplash.com/photo-1515871204537-49a5fe66a31f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1382&q=80"
+                    alt="Put alt here" class="js-object-fit-image">
             </div>
         </div>
     </div>
 
-
-
-    <!-- Navigation -->
-    <div class="container">
-        <header
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
-
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><span id="landing" href="#" class="nav-link px-2 link-secondary">Landing</span></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Section 1</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Section 2</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Section 3</a></li>
-            </ul>
-
-            <div class="col-md-3 text-end">
+    <div class="container intro-section">
+        <div class="grid grid--flex no-gutter grid--12">
+            <div class="grid__item grid__item--span-12 grid__item--span-tablet-4 grid__item--span-desktop-3">
+                <div class="intro-section__image-holder page-margin-lg-tablet">
+                    <div class="intro-section__image"
+                        style="background-image: url(&quot;https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80&quot;);">
+                    </div>
+                    <div class="side-nav-holder">
+                        <div class="js-sticky-item sticky is-reach-end is-reach-start sticky--nav" is-sidebar="true">
+                            <div style="padding-bottom: 0px;"></div>
+                            <div class="sticky__inner">
+                                <section class="ps-container scroll-area ps ps--theme_default"
+                                    data-ps-id="b485ca17-4059-5bb0-8750-80795870c094">
+                                    <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+                                        <div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                    </div>
+                                    <div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;">
+                                        <div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
+            <div
+                class="grid__item grid__item--span-12 grid__item--span-tablet-8 grid__item--span-desktop-9 page-margin-rg page-margin-md-tablet page-margin-lg-desktop">
+                <div
+                    class="page-margin-rg page-margin-xl-tablet page-margin-xxl-desktop padding-xl padding-xxl-tablet padding-xxxl-desktop">
+                    <div class="richtext">
+                        <h2><b>Romance Fraud Toolkit Name Here</b></h2>
+                        <div class="pullout-text">
+                            <p>Blurb about the project ... </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Landing Page -->
@@ -81,20 +207,34 @@
     <div id="landingContent" class="">
         <!-- Side Hero Image -->
         <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
-                        loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">What is Online Romance Fraud?</h1>
-                    <p class="lead">Romance Fraud is the engineering of a supposed friendship or relationship for
-                        fraudulent,
-                        financial gain. Suspects invest significant amounts of time into socially engineering their
-                        victims – knowing that as they gain the victim's trust, their chances of extracting considerable
-                        funds from them simultaneously increase.</p>
-                    <h1 class="display-5 fw-bold lh-1 mb-3">What are the Signs?</h1>
+            <div class="row flex-lg-row-reverse g-5 py-5">
+                <div class="richtext mb-5">
+                    <h2><b>What is Online Romance Fraud and how can I recognise
+                            it?</b></h2>
+                    <div class="pullout-text">
+                        <p class="lead">Romance Fraud is the engineering of a supposed friendship or relationship for
+                            fraudulent,
+                            financial gain. Suspects invest significant amounts of time into socially engineering their
+                            victims – knowing that as they gain the victim's trust, their chances of extracting
+                            considerable
+                            funds from them simultaneously increase.</p>
+                        <p class="lead">Fraudsters seek access to people online with the pretence of seeking a
+                            relationship.
+                            Romance frauds are typically a long-term scheme. This is because they rely on the
+                            development of trust over time in order to exploit their target.
+                            Over time, they use online grooming techniques to undermine the victim’s sense of
+                            disbelief. In order to do this, the fraudster needs to present themselves as a viable
+                            romantic
+                            prospect who seeks a genuine relationship. They find out what the victim is looking for in a
+                            relationship and then present themselves as the embodiment of that.</p>
+                        <p class="lead">For a successful romance fraud to be complete, the fraudster needs to create the
+                            appearance of a romantic prospect with whom a genuine, meaningful relationship is
+                            developing and surreptitiously segue into types of talk likely to be at odds with this
+                            romantic
+                            scenario. Requests for money are the sole, yet hidden, function of an interaction where
+                            romance is collectively the façade of, rationale for and the conduit through which the fraud
+                            is performed and need careful management as monetary demands are likely to cause alarm.</p>
+                    </div>
                     <p class="lead">Typically, the signs can manifest as:</p>
                     <ul>
                         <li>An individual presents as someone who can support you but then require your support instead
@@ -109,8 +249,203 @@
                                     compassion</li>
                             </ul>
                         </li>
-                        <li><b>Sophia's Notes</b></li>
+                        <li><b>****Sophia's Notes****</b></li>
                     </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <span id="section1button" class="button button--primary">
+                            More Details
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Side Hero Image -->
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse g-5 py-5">
+                <div class="richtext">
+                    <h2><b>How can I support someone who has experienced online romance fraud?</b></h2>
+                    <div class="pullout-text">
+                        <p class="lead">Romance Fraud is the engineering of a supposed friendship or relationship for
+                            fraudulent,
+                            financial gain. Suspects invest significant amounts of time into socially engineering their
+                            victims – knowing that as they gain the victim's trust, their chances of extracting
+                            considerable
+                            funds from them simultaneously increase.</p>
+                        <p class="lead">Fraudsters seek access to people online with the pretence of seeking a
+                            relationship.
+                            Romance frauds are typically a long-term scheme. This is because they rely on the
+                            development of trust over time in order to exploit their target.
+                            Over time, they use online grooming techniques to undermine the victim’s sense of
+                            disbelief. In order to do this, the fraudster needs to present themselves as a viable
+                            romantic
+                            prospect who seeks a genuine relationship. They find out what the victim is looking for in a
+                            relationship and then present themselves as the embodiment of that.</p>
+                        <p class="lead">For a successful romance fraud to be complete, the fraudster needs to create the
+                            appearance of a romantic prospect with whom a genuine, meaningful relationship is
+                            developing and surreptitiously segue into types of talk likely to be at odds with this
+                            romantic
+                            scenario. Requests for money are the sole, yet hidden, function of an interaction where
+                            romance is collectively the façade of, rationale for and the conduit through which the fraud
+                            is performed and need careful management as monetary demands are likely to cause alarm.</p>
+                    </div>
+                    <ul>
+                        <li>Be supportive
+                            <ul>
+                                <li>Denial is a massive issue</li>
+                                <li>Try to understand what the person is going through</li>
+                                <li>****Include quotes about why being judged was so devastating****</li>
+                                <li>****Look into support for supporters****</li>
+                                <li>Helping them to understand that their experience is worthy of respect</li>
+                                <li>Understanding that for this person it is a real relationship</li>
+                            </ul>
+                        </li>
+                        <li>Support networks – victims manipulated through isolation and shame. Help them
+                            connect again with friends and organisations and recover their sense of self.</li>
+                        <li>
+                            Inform bank and police
+                        </li>
+                        <li>Check safety and resources – check risk levels and personal safety. Have they had
+                            physical contact? Have they shared their address? Does this person know their
+                            identity?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <span id="section2button" class="button button--primary">
+                            More Details
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Side Hero Image -->
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse g-5 py-5">
+                <div class="richtext">
+                    <h2><b>How can I get help and recover from online romance fraud?</b></h2>
+                    <div class="pullout-text">
+                        <p class="lead">Romance Fraud is the engineering of a supposed friendship or relationship for
+                            fraudulent,
+                            financial gain. Suspects invest significant amounts of time into socially engineering their
+                            victims – knowing that as they gain the victim's trust, their chances of extracting
+                            considerable
+                            funds from them simultaneously increase.</p>
+                        <p class="lead">Fraudsters seek access to people online with the pretence of seeking a
+                            relationship.
+                            Romance frauds are typically a long-term scheme. This is because they rely on the
+                            development of trust over time in order to exploit their target.
+                            Over time, they use online grooming techniques to undermine the victim’s sense of
+                            disbelief. In order to do this, the fraudster needs to present themselves as a viable
+                            romantic
+                            prospect who seeks a genuine relationship. They find out what the victim is looking for in a
+                            relationship and then present themselves as the embodiment of that.</p>
+                        <p class="lead">For a successful romance fraud to be complete, the fraudster needs to create the
+                            appearance of a romantic prospect with whom a genuine, meaningful relationship is
+                            developing and surreptitiously segue into types of talk likely to be at odds with this
+                            romantic
+                            scenario. Requests for money are the sole, yet hidden, function of an interaction where
+                            romance is collectively the façade of, rationale for and the conduit through which the fraud
+                            is performed and need careful management as monetary demands are likely to cause alarm.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <span id="section3button" class="button button--primary">
+                            More Details
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container page-margin-md margin-lg">
+            <div class="grid grid--12">
+                <div
+                    class="grid__item grid__item--span-12 grid__item--span-tablet-10 grid__item--col-tablet-2 grid__item--span-desktop-6 grid__item--col-desktop-4">
+                    <div class="people__group-title margin-top-lg margin-bottom-rg">
+                        <h2 class="section-subheader">Principal Investigators</h2>
+                    </div>
+                    <div class="grid__item grid__item--span-12"><a href="https://www.essex.ac.uk/people/r/r/ryanf84501"
+                            class="story-card story-card--profile">
+                            <figure class="story-card__figure"><img width="500"
+                                    data-src="http://www1.essex.ac.uk/people-images/RYANF84501.jpg?mh=500&amp;mw=500"
+                                    alt="Professor Róisín Ryan-Flood  " class="js-object-fit-image lazyloaded"
+                                    src="http://www1.essex.ac.uk/people-images/RYANF84501.jpg?mh=500&amp;mw=500">
+                            </figure>
+                            <div class="story-card__content">
+                                <div class="story-card__content-inner">
+                                    <h3 class="story-card__title purple">
+                                        Professor Róisín Ryan-Flood
+                                    </h3>
+                                    <div class="story-card__summary">
+                                        <div class="staff-card__position">
+                                            <p>Co-Investigator</p>
+                                            The Department of Sociology, <span
+                                                class="staff-card__strong-text">University of Essex</span>
+                                        </div>
+                                        <div class="staff-card__position">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__item grid__item--span-12"><a href="#" class="story-card story-card--profile">
+                            <figure class="story-card__figure"><img width="500"
+                                    data-src="http://www1.essex.ac.uk/people-images/WALSH20801.jpg?mh=500&amp;mw=500"
+                                    alt="Name here  " class="js-object-fit-image lazyloaded"
+                                    src="https://images.unsplash.com/photo-1544502062-f82887f03d1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1559&q=80">
+                            </figure>
+                            <div class="story-card__content">
+                                <div class="story-card__content-inner">
+                                    <h3 class="story-card__title purple">
+                                        Name here
+                                    </h3>
+                                    <div class="story-card__summary">
+                                        <div class="staff-card__position">
+                                            <p>Co-Investigator</p>
+                                            The Department of Psychosocial and Psychoanalytic Studies, <span
+                                                class="staff-card__strong-text">University of Essex</span>
+                                        </div>
+                                        <div class="staff-card__position">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid__item grid__item--span-12"><a href="#" class="story-card story-card--profile">
+                            <figure class="story-card__figure"><img width="500"
+                                    data-src="http://www1.essex.ac.uk/people-images/WALSH20801.jpg?mh=500&amp;mw=500"
+                                    alt="Name here" class="js-object-fit-image lazyloaded"
+                                    src="https://images.unsplash.com/photo-1544502062-f82887f03d1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1559&q=80">
+                            </figure>
+                            <div class="story-card__content">
+                                <div class="story-card__content-inner">
+                                    <h3 class="story-card__title purple">
+                                        Name here
+                                    </h3>
+                                    <div class="story-card__summary">
+                                        <div class="staff-card__position">
+                                            <p>Co-Investigator</p>
+                                            The Department of Psychosocial and Psychoanalytic Studies, <span
+                                                class="staff-card__strong-text">University of Essex</span>
+                                        </div>
+                                        <div class="staff-card__position">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,23 +457,96 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Maria's Story
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the
-                            transition
-                            does limit overflow.
+                            Maria moved back to the UK after a number of years living abroad. Her marriage had ended
+                            and she had elderly parents back home who needed care and support. After a couple of very
+                            busy years working and caring for her parents, a friend suggested that it was time she do
+                            something for herself and try online dating. She went on a few dates but didn’t find anyone
+                            whom she clicked with. Then she matched with a guy online, John. He seemed perfect for her.
+                            Maria is a very friendly chatty person and she wanted to meet someone similar. John was
+                            charming in their chats. She also loved children and John was a widower with a teenage
+                            daughter. He looked handsome in his profile photo.
+                            <br>
+                            <br>
+                            John told her that he was a builder and lived nearby but that he had to go to Africa to help
+                            build
+                            a school. He reassured her that they would meet in person when he got back. Their online
+                            conversations continued. Whenever they spoke online, he would say that his computer camera
+                            was broken. Then he told her that he was unable to get back to the UK just yet because his
+                            employer hadn’t released his salary. Soon after that, he mentioned that his daughter’s
+                            birthday
+                            was coming up but he couldn’t buy her anything because of the situation with his salary. He
+                            had told Maria that his daughter loved music. Maria also loved music. So then she offered to
+                            buy an ipod for his daughter. She had it engraved on the back and sent to Africa. After
+                            that,
+                            requests for money started coming in. He would say things like ‘I can’t come home yet but if
+                            you could send me £100 I could pay this person off’. Each time he asked for money, the
+                            amount
+                            increased.
+                            <br>
+                            <br>
+                            At one point, Maria got a bit suspicious. She asked to speak to his daughter and a young
+                            girl
+                            came on the phone, and they chatted for a while. John told her that he was flying back to
+                            the
+                            UK on Valentine’s Day. Maria took the day off work to meet him at the airport, but he didn’t
+                            show. He said he had been too embarrassed to explain to her that he still couldn’t afford
+                            to.
+                            <br>
+                            <br>
+                            Around this time, a friend told Maria that she had seen a programme on tv about online
+                            romance
+                            fraud and that she thought this guy might not be real. Maria was very offended. She felt
+                            that
+                            she was a woman of the world who had lived abroad and wouldn’t be deceived in this way. But
+                            she decided to ask John to send her a copy of his passport, so that she could prove he was
+                            real.
+                            Eventually, he sent a passport photo that showed the man whose photo she had seen online.
+                            But the name at the bottom of the photo was different to the one that was shown elsewhere on
+                            the passport page. She realised that she was a victim of online romance fraud.
+                            <br>
+                            <br>
+                            Accepting that she had been victimise was difficult for Maria. She had invested a lot of
+                            time
+                            and energy in this relationship. Her conversations with John had become a part of her daily
+                            life. She had also shared intimate photos with him. Knowing that he was not the person she
+                            thought he was made her feel humiliated and embarrassed.
+                            <br>
+                            <br>
+                            When Maria looked back at the relationship, she recognised that she was very vulnerable at
+                            the
+                            time she met John. She had just gone through a difficult divorce and had taken on
+                            significant
+                            care responsibilities for her parents. She needed someone who was invested in her at that
+                            point
+                            in her life. The experience of online romance fraud left her feeling suicidal. She says that
+                            the
+                            only thing that stopped her from harming herself was her care responsibilities for her
+                            parents.
+                            2
+                            Eventually, she confided in her mother and her best friend. Luckily, they were both kind and
+                            understanding. She felt that they didn’t judge her and this was an important part of her
+                            healing
+                            process.
+                            <br>
+                            <br>
+                            Over time, Maria recovered her self-confidence and self-belief. Making time for physical
+                            fitness, which was a passion of hers, helped with this, as did the loving support of her
+                            mother
+                            and her best friend. After a few years, she met the man who is now her husband, via another
+                            dating app. But this time around, if someone didn’t agree to meet in person quickly, she
+                            stopped
+                            corresponding with them. She knew not to provide any money to anyone. When she confided
+                            in her husband about her experience of online romance fraud, he was kind and understanding.
+                            She realised that the experience had left her with trust issues. But over time she was able
+                            to
+                            have a supportive and loving relationship again.
                         </div>
                     </div>
                 </div>
@@ -146,22 +554,64 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
+                            Jennifer's Story
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the
-                            transition
-                            does limit overflow.
+                            Jennifer was 27 and her six year relationship ended just before the pandemic began. She had
+                            to
+                            move out of the home she shared with her ex-partner and move in with her mother, stepfather
+                            and younger brother. This was difficult and she argued with her stepfather a lot. She
+                            managed
+                            to get a small flat for herself. But then her mother’s marriage ended after her stepfather
+                            was
+                            abusive and violent, and her mother and brother moved in with her. Now, Jennifer and her
+                            family were living in a small two bedroom flat and her mother and brother were also arguing
+                            frequently. Jennifer felt very low and stressed about the end of her long-term relationship
+                            and
+                            her family situation.
+                            <br>
+                            <br>
+                            Eventually Jennifer decided to try dating again and joined a dating app. She met a guy
+                            called
+                            James who was very chatty and friendly. Many of the messages she got from other guys on the
+                            app quickly became very sexualised, but James was very respectful. His gentlemanly behaviour
+                            captured her interest. They soon switched from chatting on the dating app to WhatsApp. She
+                            looked forward to hearing from him and felt excited whenever he messaged her. James soon
+                            told her about a site where you could invest cryptocurrency and make money on it. When he
+                            first sent her screenshots of the site, she was very suspicious. But he kept on bringing it
+                            up. She
+                            gradually started to trust him more as they continued chatting online. He often complimented
+                            her and made her feel good about herself. When he started sharing screenshots of his
+                            investments increasing, she decided to invest £500. Soon she saw the amount go up. Then, as
+                            a precaution she withdrew her investment, plus the profit, from the account. This happened
+                            without any problem. That’s when she really believed that this was a genuine investment with
+                            a high return rate. She soon reinvested this money back into the scheme. James also promised
+                            that he would meet up with her in person soon.
+                            <br>
+                            <br>
+                            Jennifer quickly began investing more and more money. But when she tried to withdraw her
+                            money a second time, she was told that she needed to pay tax first. She told James that she
+                            was
+                            out of money and he suddenly disappeared, ghosting her completely. Then she started
+                            receiving
+                            threatening letters from the site saying that they would sue her if she didn’t pay the tax.
+                            She
+                            started to feel really scared and anxious, so she confided in a friend who was an
+                            accountant.
+                            He explained that this was a scam. She reported the experience to the police. Her family
+                            were
+                            supportive and understanding when she confided in them, but one friend was very judgmental
+                            and made her feel worse. She hasn’t told anyone else and worries that people would judge her
+                            if they knew.
+                            <br>
+                            <br>
+                            The experience made Jennifer a lot more guarded about trusting people. However in time, she
+                            began dating again and met her current partner via another dating app. She only corresponded
+                            with people who agreed to meet quickly. Finding videos of people on social media who shared
+                            her experience made her feel less alone and helped her realise that online romance fraud is
+                            something that happens to many people.
                         </div>
                     </div>
                 </div>
@@ -169,21 +619,44 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
+                            Richard's Story
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the
-                            transition
-                            does limit overflow.
+                            Richard was in his seventies and had been widowed a few years earlier after a long and happy
+                            marriage. During the pandemic, he decided to sign up to a dating app. He got chatting to a
+                            woman, Heather, who said that she was a hairdresser. They developed a romantic relationship
+                            online, which was a positive source of connection in his life during the pandemic. Heather
+                            sent
+                            him lots of photos of herself. She soon confided that she was having some financial
+                            problems.
+                            Then she said that she needed someone to redecorate her salon. Richard paid for the cost of
+                            this, which was several hundred pounds. Heather convinced him that he was becoming a part
+                            owner of the hair salon. Richard was also in contact with someone whom Heather presented as
+                            her solicitor, which helped convince him that this was all above board. In fact, the
+                            ‘solicitor’
+                            was part of the scam.
+                            <br>
+                            <br>
+                            Over time, Heather’s demands escalated and eventually he paid out over eighty thousand
+                            pounds, all of which he thought was being invested directly into Heather’s business.
+                            Eventually, she told him that her solicitor had run off with the money and that she needed
+                            more
+                            money to hire another solicitor to find him. Richard began to feel that something wasn’t
+                            right
+                            because she always had an excuse for not meeting in person. He approached his financial
+                            advisor, who immediately suspected online romance fraud. When Richard confronted Heather,
+                            she sent very angry and abusive messages.
+                            <br>
+                            <br>
+                            Although Richard’s financial advisor and staff at the bank were very sympathetic, he
+                            experienced some ridicule and disrespect from neighbours who found out about his situation.
+                            This was difficult for him but he found comfort from friends who were supportive. Their
+                            belief
+                            in him made helped him to regain trust in people. He also felt that this was a situation
+                            that many
+                            people could find themselves in, given the right circumstances.
                         </div>
                     </div>
                 </div>
@@ -193,7 +666,7 @@
         <!-- Some External Resources -->
         <div class="container px-4 py-5" id="custom-cards">
 
-            <h2 class="pb-2 border-bottom">Some External Resources</h2>
+            <h1 class="pb-2 border-bottom">Some External Resources</h1>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
@@ -246,156 +719,17 @@
                 </div>
             </div>
         </div>
-
-        <!-- How can I support a victim? -->
-        <div class="container px-4 py-5" id="icon-grid">
-            <h2 class="pb-2 border-bottom">How can I Support a Victim?</h2>
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Long-term Schemes</h4>
-                        <p>Romance fraud is typically a long-term scheme.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Presented as Genuine Romance</h4>
-                        <p>The fraudster will typically present themself as genuine romantic prospect, in order to gain
-                            your
-                            trust.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Grooming Techniques</h4>
-                        <p>Online grooming and psychological abuse are used to undermine a potential victim's sense of
-                            disbelief.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Too Good to be True</h4>
-                        <p>They may study your online profiles to present their fake persona as exactly what you are
-                            looking
-                            for.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Veiled Requests for Money</h4>
-                        <p>A fraudster may not be blunt with their requests. They may hide requests for money as
-                            requests
-                            for affection.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Bold Requests for Money</h4>
-                        <p>They may also be bold in their requests in an attempt to make a victim feel fear if they
-                            don't
-                            send money.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Frequent Unavailability</h4>
-                        <p>Fraudsters may carefully manage the relationship so as not to give away the ruse. They will
-                            likely try and keep the relationship online.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Something Feels "Off"</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- How can I get help? -->
-        <div class="container px-4 py-5" id="icon-grid">
-            <h2 class="pb-2 border-bottom">How can I get help?</h2>
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Long-term Schemes</h4>
-                        <p>Romance fraud is typically a long-term scheme.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Presented as Genuine Romance</h4>
-                        <p>The fraudster will typically present themself as genuine romantic prospect, in order to gain
-                            your
-                            trust.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Grooming Techniques</h4>
-                        <p>Online grooming and psychological abuse are used to undermine a potential victim's sense of
-                            disbelief.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Too Good to be True</h4>
-                        <p>They may study your online profiles to present their fake persona as exactly what you are
-                            looking
-                            for.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Veiled Requests for Money</h4>
-                        <p>A fraudster may not be blunt with their requests. They may hide requests for money as
-                            requests
-                            for affection.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Bold Requests for Money</h4>
-                        <p>They may also be bold in their requests in an attempt to make a victim feel fear if they
-                            don't
-                            send money.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Frequent Unavailability</h4>
-                        <p>Fraudsters may carefully manage the relationship so as not to give away the ruse. They will
-                            likely try and keep the relationship online.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                    <div>
-                        <h4 class="fw-bold mb-0">Something Feels "Off"</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
-
 
     <!-- Section 1 -->
     <div id="section1" class="">
 
-        <div class="px-4 py-5 my-5 text-center">
-            <h1 class="display-5 fw-bold">Section 1</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                    world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
-                    grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        <div id="section1Title" class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">What is online romance fraud and how do I recognise it?</h1>
+                <div class="col-lg-6 mx-auto">
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    </div>
                 </div>
             </div>
         </div>
@@ -404,7 +738,11 @@
         <div class="container px-4 py-5" id="icon-grid">
             <h2 class="pb-2 border-bottom">Online Romance Fraud Defined</h2>
 
-            <p>Test</p>
+            <p>Romance Fraud is the creation of a supposed friendship or relationship to exploit somebody
+                for financial gain. Typically, fraudsters seek access to people online with the pretence of
+                seeking a relationship. Fraudsters invest significant amounts of time into manipulating their
+                victims with the knowledge that as they gain their victim’s trust, the chances of getting money
+                from them increases.</p>
         </div>
 
         <!-- What are some signs -->
@@ -605,23 +943,96 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Maria's Story
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the
-                            transition
-                            does limit overflow.
+                            Maria moved back to the UK after a number of years living abroad. Her marriage had ended
+                            and she had elderly parents back home who needed care and support. After a couple of very
+                            busy years working and caring for her parents, a friend suggested that it was time she do
+                            something for herself and try online dating. She went on a few dates but didn’t find anyone
+                            whom she clicked with. Then she matched with a guy online, John. He seemed perfect for her.
+                            Maria is a very friendly chatty person and she wanted to meet someone similar. John was
+                            charming in their chats. She also loved children and John was a widower with a teenage
+                            daughter. He looked handsome in his profile photo.
+                            <br>
+                            <br>
+                            John told her that he was a builder and lived nearby but that he had to go to Africa to help
+                            build
+                            a school. He reassured her that they would meet in person when he got back. Their online
+                            conversations continued. Whenever they spoke online, he would say that his computer camera
+                            was broken. Then he told her that he was unable to get back to the UK just yet because his
+                            employer hadn’t released his salary. Soon after that, he mentioned that his daughter’s
+                            birthday
+                            was coming up but he couldn’t buy her anything because of the situation with his salary. He
+                            had told Maria that his daughter loved music. Maria also loved music. So then she offered to
+                            buy an ipod for his daughter. She had it engraved on the back and sent to Africa. After
+                            that,
+                            requests for money started coming in. He would say things like ‘I can’t come home yet but if
+                            you could send me £100 I could pay this person off’. Each time he asked for money, the
+                            amount
+                            increased.
+                            <br>
+                            <br>
+                            At one point, Maria got a bit suspicious. She asked to speak to his daughter and a young
+                            girl
+                            came on the phone, and they chatted for a while. John told her that he was flying back to
+                            the
+                            UK on Valentine’s Day. Maria took the day off work to meet him at the airport, but he didn’t
+                            show. He said he had been too embarrassed to explain to her that he still couldn’t afford
+                            to.
+                            <br>
+                            <br>
+                            Around this time, a friend told Maria that she had seen a programme on tv about online
+                            romance
+                            fraud and that she thought this guy might not be real. Maria was very offended. She felt
+                            that
+                            she was a woman of the world who had lived abroad and wouldn’t be deceived in this way. But
+                            she decided to ask John to send her a copy of his passport, so that she could prove he was
+                            real.
+                            Eventually, he sent a passport photo that showed the man whose photo she had seen online.
+                            But the name at the bottom of the photo was different to the one that was shown elsewhere on
+                            the passport page. She realised that she was a victim of online romance fraud.
+                            <br>
+                            <br>
+                            Accepting that she had been victimise was difficult for Maria. She had invested a lot of
+                            time
+                            and energy in this relationship. Her conversations with John had become a part of her daily
+                            life. She had also shared intimate photos with him. Knowing that he was not the person she
+                            thought he was made her feel humiliated and embarrassed.
+                            <br>
+                            <br>
+                            When Maria looked back at the relationship, she recognised that she was very vulnerable at
+                            the
+                            time she met John. She had just gone through a difficult divorce and had taken on
+                            significant
+                            care responsibilities for her parents. She needed someone who was invested in her at that
+                            point
+                            in her life. The experience of online romance fraud left her feeling suicidal. She says that
+                            the
+                            only thing that stopped her from harming herself was her care responsibilities for her
+                            parents.
+                            2
+                            Eventually, she confided in her mother and her best friend. Luckily, they were both kind and
+                            understanding. She felt that they didn’t judge her and this was an important part of her
+                            healing
+                            process.
+                            <br>
+                            <br>
+                            Over time, Maria recovered her self-confidence and self-belief. Making time for physical
+                            fitness, which was a passion of hers, helped with this, as did the loving support of her
+                            mother
+                            and her best friend. After a few years, she met the man who is now her husband, via another
+                            dating app. But this time around, if someone didn’t agree to meet in person quickly, she
+                            stopped
+                            corresponding with them. She knew not to provide any money to anyone. When she confided
+                            in her husband about her experience of online romance fraud, he was kind and understanding.
+                            She realised that the experience had left her with trust issues. But over time she was able
+                            to
+                            have a supportive and loving relationship again.
                         </div>
                     </div>
                 </div>
@@ -629,22 +1040,64 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
+                            Jennifer's Story
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the
-                            transition
-                            does limit overflow.
+                            Jennifer was 27 and her six year relationship ended just before the pandemic began. She had
+                            to
+                            move out of the home she shared with her ex-partner and move in with her mother, stepfather
+                            and younger brother. This was difficult and she argued with her stepfather a lot. She
+                            managed
+                            to get a small flat for herself. But then her mother’s marriage ended after her stepfather
+                            was
+                            abusive and violent, and her mother and brother moved in with her. Now, Jennifer and her
+                            family were living in a small two bedroom flat and her mother and brother were also arguing
+                            frequently. Jennifer felt very low and stressed about the end of her long-term relationship
+                            and
+                            her family situation.
+                            <br>
+                            <br>
+                            Eventually Jennifer decided to try dating again and joined a dating app. She met a guy
+                            called
+                            James who was very chatty and friendly. Many of the messages she got from other guys on the
+                            app quickly became very sexualised, but James was very respectful. His gentlemanly behaviour
+                            captured her interest. They soon switched from chatting on the dating app to WhatsApp. She
+                            looked forward to hearing from him and felt excited whenever he messaged her. James soon
+                            told her about a site where you could invest cryptocurrency and make money on it. When he
+                            first sent her screenshots of the site, she was very suspicious. But he kept on bringing it
+                            up. She
+                            gradually started to trust him more as they continued chatting online. He often complimented
+                            her and made her feel good about herself. When he started sharing screenshots of his
+                            investments increasing, she decided to invest £500. Soon she saw the amount go up. Then, as
+                            a precaution she withdrew her investment, plus the profit, from the account. This happened
+                            without any problem. That’s when she really believed that this was a genuine investment with
+                            a high return rate. She soon reinvested this money back into the scheme. James also promised
+                            that he would meet up with her in person soon.
+                            <br>
+                            <br>
+                            Jennifer quickly began investing more and more money. But when she tried to withdraw her
+                            money a second time, she was told that she needed to pay tax first. She told James that she
+                            was
+                            out of money and he suddenly disappeared, ghosting her completely. Then she started
+                            receiving
+                            threatening letters from the site saying that they would sue her if she didn’t pay the tax.
+                            She
+                            started to feel really scared and anxious, so she confided in a friend who was an
+                            accountant.
+                            He explained that this was a scam. She reported the experience to the police. Her family
+                            were
+                            supportive and understanding when she confided in them, but one friend was very judgmental
+                            and made her feel worse. She hasn’t told anyone else and worries that people would judge her
+                            if they knew.
+                            <br>
+                            <br>
+                            The experience made Jennifer a lot more guarded about trusting people. However in time, she
+                            began dating again and met her current partner via another dating app. She only corresponded
+                            with people who agreed to meet quickly. Finding videos of people on social media who shared
+                            her experience made her feel less alone and helped her realise that online romance fraud is
+                            something that happens to many people.
                         </div>
                     </div>
                 </div>
@@ -652,21 +1105,44 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
+                            Richard's Story
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes
-                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
-                            can
-                            modify any of this with custom CSS or overriding our default variables. It's also worth
-                            noting
-                            that just about any HTML can go within the <code>.accordion-body</code>, though the
-                            transition
-                            does limit overflow.
+                            Richard was in his seventies and had been widowed a few years earlier after a long and happy
+                            marriage. During the pandemic, he decided to sign up to a dating app. He got chatting to a
+                            woman, Heather, who said that she was a hairdresser. They developed a romantic relationship
+                            online, which was a positive source of connection in his life during the pandemic. Heather
+                            sent
+                            him lots of photos of herself. She soon confided that she was having some financial
+                            problems.
+                            Then she said that she needed someone to redecorate her salon. Richard paid for the cost of
+                            this, which was several hundred pounds. Heather convinced him that he was becoming a part
+                            owner of the hair salon. Richard was also in contact with someone whom Heather presented as
+                            her solicitor, which helped convince him that this was all above board. In fact, the
+                            ‘solicitor’
+                            was part of the scam.
+                            <br>
+                            <br>
+                            Over time, Heather’s demands escalated and eventually he paid out over eighty thousand
+                            pounds, all of which he thought was being invested directly into Heather’s business.
+                            Eventually, she told him that her solicitor had run off with the money and that she needed
+                            more
+                            money to hire another solicitor to find him. Richard began to feel that something wasn’t
+                            right
+                            because she always had an excuse for not meeting in person. He approached his financial
+                            advisor, who immediately suspected online romance fraud. When Richard confronted Heather,
+                            she sent very angry and abusive messages.
+                            <br>
+                            <br>
+                            Although Richard’s financial advisor and staff at the bank were very sympathetic, he
+                            experienced some ridicule and disrespect from neighbours who found out about his situation.
+                            This was difficult for him but he found comfort from friends who were supportive. Their
+                            belief
+                            in him made helped him to regain trust in people. He also felt that this was a situation
+                            that many
+                            people could find themselves in, given the right circumstances.
                         </div>
                     </div>
                 </div>
@@ -806,27 +1282,24 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- Section 2 -->
     <div id="section2">
 
-        <div class="px-4 py-5 my-5 text-center">
-            <h1 class="display-5 fw-bold">Section 2</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                    world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
-                    grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        <div id="section2Title" class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">How can I support someone who has experienced online romance
+                    fraud?</h1>
+                <div class="col-lg-6 mx-auto">
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container px-4 py-5">
-            <h2>Family and Friends</h2>
+            <h2><b>Family and Friends</b></h2>
 
             <p>
                 It can be very difficult and frustrating watching someone close to you being scammed and
@@ -900,178 +1373,180 @@
                 it. Because it's painful the way I went. I had enough to go through and the last thing you need
                 [is] to be judged."</p>
 
-                <h2>Family and Friends</h2>
+            <h2><b>Professionals</b></h2>
 
-                <p><b>DO</b></p>
+            <p><b>DO</b></p>
 
-                <ul>
-                    <li>Inform yourself about the dynamics of romance fraud and the methods used by
-                        fraudsters. Understanding how this kind of abuse works and what the psychological,
-                        emotional, and financial impacts are will help you relate to, connect with, and better
-                        support victims</li>
-                    <li>Adopt a realistic definition of ‘success’ for engagement with a victim. The priority
-                        should be to help people stay safe, re-connect with others outside the relationship to
-                        reduce isolation, and stop sending money.</li>
-                    <li>Accept that victims may continue to be in denial even when they need support. It is
-                        unrealistic and unhelpful to expect a victim to just ‘snap out of it’. Interventions and
-                        support will be more likely to succeed if based on an acknowledgement that there
-                        may be a transitional period where a victim remains in contact with the fraudster</li>
-                    <li>Follow up with victims if you are dealing with their case, even if it is just to tell them
-                        that there is no progress, or that you have done all you can.</li>
-                </ul>
+            <ul>
+                <li>Inform yourself about the dynamics of romance fraud and the methods used by
+                    fraudsters. Understanding how this kind of abuse works and what the psychological,
+                    emotional, and financial impacts are will help you relate to, connect with, and better
+                    support victims</li>
+                <li>Adopt a realistic definition of ‘success’ for engagement with a victim. The priority
+                    should be to help people stay safe, re-connect with others outside the relationship to
+                    reduce isolation, and stop sending money.</li>
+                <li>Accept that victims may continue to be in denial even when they need support. It is
+                    unrealistic and unhelpful to expect a victim to just ‘snap out of it’. Interventions and
+                    support will be more likely to succeed if based on an acknowledgement that there
+                    may be a transitional period where a victim remains in contact with the fraudster</li>
+                <li>Follow up with victims if you are dealing with their case, even if it is just to tell them
+                    that there is no progress, or that you have done all you can.</li>
+            </ul>
 
-                <p><b>DON'T</b></p>
+            <p><b>DON'T</b></p>
 
-                <ul>
-                    <li>Blame or shame victims for what has happened to them. Victims of romance fraud
-                        did not do this to themselves. They have been skilfully groomed and manipulated,
-                        often by seasoned criminals. Throwaway comments that imply victims are
-                        Commented [HD5]: Include hyperlink to resources in
-                        Section 1
-                        responsible for what happened to them can further isolate them and reduce their self-
-                        worth. This harms their chances of becoming empowered to end the abuse, recover
-                        and protect themselves in the future. Some victims have reported feeling suicidal and
-                        some have ended their lives</li>
-                    <li>Assume that victims know anything about how to protect themselves and their
-                        finances. They likely won’t. Give victims all the information they might need and
-                        signpost them to where they can report the fraud, get legal, financial, emotional or
-                        psychological support, and protect themselves. For example, police are focused on
-                        criminal cases, but some victims may want to pursue civil cases against their abuser.
-                        Victims should be informed of their options.</li>
-                </ul>
-                
-                <p>"When I spoke to [a victim support worker] and you know, she, she was, she
-                    was an absolute godsend for me at that point, because I needed to hear from
-                    somebody that I wasn't stupid. I wasn't, you know, this pathetic woman. You know
-                    that, that he was a professional...a fraudster. That was the turning point for me.”</p>
+            <ul>
+                <li>Blame or shame victims for what has happened to them. Victims of romance fraud
+                    did not do this to themselves. They have been skilfully groomed and manipulated,
+                    often by seasoned criminals. Throwaway comments that imply victims are
+                    Commented [HD5]: Include hyperlink to resources in
+                    Section 1
+                    responsible for what happened to them can further isolate them and reduce their self-
+                    worth. This harms their chances of becoming empowered to end the abuse, recover
+                    and protect themselves in the future. Some victims have reported feeling suicidal and
+                    some have ended their lives</li>
+
+            </ul>
+            Fraud Prevention Practitioner: "We need to try and understand it from the victims
+            perspective so we may gently walk beside them back to reality"
+            <br>
+            <br>
+            <ul>
+
+
+                <li>Assume that victims know anything about how to protect themselves and their
+                    finances. They likely won’t. Give victims all the information they might need and
+                    signpost them to where they can report the fraud, get legal, financial, emotional or
+                    psychological support, and protect themselves. For example, police are focused on
+                    criminal cases, but some victims may want to pursue civil cases against their abuser.
+                    Victims should be informed of their options.</li>
+            </ul>
+
+            <p>"When I spoke to [a victim support worker] and you know, she, she was, she
+                was an absolute godsend for me at that point, because I needed to hear from
+                somebody that I wasn't stupid. I wasn't, you know, this pathetic woman. You know
+                that, that he was a professional...a fraudster. That was the turning point for me.”</p>
 
         </div>
-
-
-
     </div>
 
     <!-- Section 3-->
     <div id="section3">
-
-        <div class="px-4 py-5 my-5 text-center">
-            <h1 class="display-5 fw-bold">Section 3</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                    world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
-                    grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        <div id="section3Title" class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">How can I get Help and Recover from Online Romance Fraud?</h1>
+                <div class="col-lg-6 mx-auto">
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container px-4 py-5">
 
-            <h2>How can I get Help and Recover from Online Romance Fraud?</h1>
+            <p>The trauma of experiencing ORF can make it feel difficult to reach out for help and support.
+                It can feel and be a very isolating experience when you are dealing with painful emotions, the
+                shock of the relationship and real losses in your life. It may feel impossible to share these
+                experiences with others in your life. You are not alone in going through such a painful
+                experience, as this can happen to anyone, of any age. There are important steps in beginning
+                to regain a sense of control, safety and healing from the effects on you and your life, both
+                now and in the future</p>
 
-                <p>The trauma of experiencing ORF can make it feel difficult to reach out for help and support.
-                    It can feel and be a very isolating experience when you are dealing with painful emotions, the
-                    shock of the relationship and real losses in your life. It may feel impossible to share these
-                    experiences with others in your life. You are not alone in going through such a painful
-                    experience, as this can happen to anyone, of any age. There are important steps in beginning
-                    to regain a sense of control, safety and healing from the effects on you and your life, both
-                    now and in the future</p>
+            <h2>Safety Matters</h2>
 
-                <h2>Safety Matters</h2>
+            <p>
+                Securing your own personal safety and accessing the right help is vital to begin stabilising the
+                situation. The checklist here is a guide to steps to take to secure your immediate and long-term
+                safety.
+            </p>
 
-                <p>
-                    Securing your own personal safety and accessing the right help is vital to begin stabilising the
-                    situation. The checklist here is a guide to steps to take to secure your immediate and long-term
-                    safety.
-                </p>
+            <h2>You are Important</h2>
 
-                <h2>You are Important</h2>
+            <p>
+                The idea of self-care may feel impossible when you have been so invalidated by another
+                person. You may have internalised feelings of worthlessness and shame, perhaps feeling
+                anxious and lost, confused without that relationship or not sure how to manage leaving the
+                relationship behind for your own wellbeing and protection. A sense of disbelief is another
+                natural reaction, and it can take time to adjust to the new reality you are experiencing and
+                how to address the situation for your present and future wellbeing.
+            </p>
 
-                <p>
-                    The idea of self-care may feel impossible when you have been so invalidated by another
-                    person. You may have internalised feelings of worthlessness and shame, perhaps feeling
-                    anxious and lost, confused without that relationship or not sure how to manage leaving the
-                    relationship behind for your own wellbeing and protection. A sense of disbelief is another
-                    natural reaction, and it can take time to adjust to the new reality you are experiencing and
-                    how to address the situation for your present and future wellbeing.
-                </p>
+            <h2>Your Emotions Matter</h2>
 
-                <h2>Your Emotions Matter</h2>
+            <p>Grief, anxiety and shame are recognised effects of the impact of a romance fraud relationship.
+                You may experience anger and outrage and powerless in achieving any sense of justice and
+                resolution for yourself in the wake of these experiences. Victims can be made to feel that the
+                relationship and what happens is their sole responsibly, and then feel ashamed that they
+                “didn’t see it coming” or “see through the person” and blame themselves. The grief of the
+                hopes of what has been lost and what has been lost is real, and emotional support is vital to
+                help prevent a downwards spiral of self-blame, guilt and self-rejection.</p>
 
-                <p>Grief, anxiety and shame are recognised effects of the impact of a romance fraud relationship.
-                    You may experience anger and outrage and powerless in achieving any sense of justice and
-                    resolution for yourself in the wake of these experiences. Victims can be made to feel that the
-                    relationship and what happens is their sole responsibly, and then feel ashamed that they
-                    “didn’t see it coming” or “see through the person” and blame themselves. The grief of the
-                    hopes of what has been lost and what has been lost is real, and emotional support is vital to
-                    help prevent a downwards spiral of self-blame, guilt and self-rejection.</p>
+            <h2>Acknowledge the hurt</h2>
 
-                <h2>Acknowledge the hurt</h2>
+            <p>This relationship has been real and meaningful until the realisation that the other person was
+                not who you believed them to be. Emotions and thoughts can feel conflicted, even though
+                they have been shown to have violated your trust you may miss the connection, intimacy and
+                hopes you had of the relationship. Trusting another person who then violates and betrays that
+                trust can result in deep hurt, loss of trust in yourself and others and have widespread effects in
+                life.
+                It is natural to avoid, maybe try to push away such painful and difficult responses to hurt.
+                Beginning to acknowledge how you feel and how this affects you is important is a first step
+                towards valuing yourself again and rebuilding your life. This understanding becomes a
+                valuable resource in protecting and regaining trust in yourself in your present and future life.</p>
 
-                <p>This relationship has been real and meaningful until the realisation that the other person was
-                    not who you believed them to be. Emotions and thoughts can feel conflicted, even though
-                    they have been shown to have violated your trust you may miss the connection, intimacy and
-                    hopes you had of the relationship. Trusting another person who then violates and betrays that
-                    trust can result in deep hurt, loss of trust in yourself and others and have widespread effects in
-                    life.
-                    It is natural to avoid, maybe try to push away such painful and difficult responses to hurt.
-                    Beginning to acknowledge how you feel and how this affects you is important is a first step
-                    towards valuing yourself again and rebuilding your life. This understanding becomes a
-                    valuable resource in protecting and regaining trust in yourself in your present and future life.</p>
+            <h2>Self-kindness</h2>
 
-                <h2>Self-kindness</h2>
+            <p>A key point is reminding yourself, and be reminded by understanding others, that you are not
+                to blame for trusting another person who deliberately set out to deceive you. This is important
+                when you begin to think and feel painful thoughts, emotions and bodily sensations.
+                It may be hard to believe if others are blaming you for difficult consequences of this
+                experience in your life. Remember that fraudsters are adept at instilling self-doubt and
+                cultivating a false sense of security, trust and exploiting a willingness to help others in their
+                victims. They appeal to a natural human need to feel valued, loved and cared for. It may be
+                that you met them at a particularly difficult time in your life.
+                Paying attention to your physical and mental health is very important as you negotiate such a
+                painful experience. Grief and loss can have mental and physical health impacts. Some people
+                may have ptsd symptoms associated with trauma from the shock of what is or has happened
+                to them. As we have acknowledged, feelings and thoughts about yourself may make reaching
+                out for help difficult. We strongly encourage you to reach out for help with your health and
+                wellbeing at such as sensitive and challenging time. Professional and peer supporters are
+                trained in understanding the difficulties you may be facing and are committed to help you in
+                a constructive and meaningful way.</p>
 
-                <p>A key point is reminding yourself, and be reminded by understanding others, that you are not
-                    to blame for trusting another person who deliberately set out to deceive you. This is important
-                    when you begin to think and feel painful thoughts, emotions and bodily sensations.
-                    It may be hard to believe if others are blaming you for difficult consequences of this
-                    experience in your life. Remember that fraudsters are adept at instilling self-doubt and
-                    cultivating a false sense of security, trust and exploiting a willingness to help others in their
-                    victims. They appeal to a natural human need to feel valued, loved and cared for. It may be
-                    that you met them at a particularly difficult time in your life.
-                    Paying attention to your physical and mental health is very important as you negotiate such a
-                    painful experience. Grief and loss can have mental and physical health impacts. Some people
-                    may have ptsd symptoms associated with trauma from the shock of what is or has happened
-                    to them. As we have acknowledged, feelings and thoughts about yourself may make reaching
-                    out for help difficult. We strongly encourage you to reach out for help with your health and
-                    wellbeing at such as sensitive and challenging time. Professional and peer supporters are
-                    trained in understanding the difficulties you may be facing and are committed to help you in
-                    a constructive and meaningful way.</p>
+            <h2>Healing and recovery are individual experiences</h2>
 
-                <h2>Healing and recovery are individual experiences</h2>
+            <p>In any relationship, an identity forms from the people involved that is unique. Separating out
+                as an individual from this can both feel and be difficult. You may have had your confidence,
+                trust in yourself and your own judgement affected badly. This is a known effect of abusive
+                relationships and grooming strategies. When this happens, it becomes much harder to
+                experience and trust yourself as a separate person, with the confidence and ability to act on
+                your own behalf. You may feel disorientated, confused and conflicted about your own
+                identity, as you leave behind the identity you experienced in the relationship. Often, this is
+                not a cut and dried process, there can be so many areas of life to recover alongside navigating
+                the personal impacts of the experience.</p>
 
-                <p>In any relationship, an identity forms from the people involved that is unique. Separating out
-                    as an individual from this can both feel and be difficult. You may have had your confidence,
-                    trust in yourself and your own judgement affected badly. This is a known effect of abusive
-                    relationships and grooming strategies. When this happens, it becomes much harder to
-                    experience and trust yourself as a separate person, with the confidence and ability to act on
-                    your own behalf. You may feel disorientated, confused and conflicted about your own
-                    identity, as you leave behind the identity you experienced in the relationship. Often, this is
-                    not a cut and dried process, there can be so many areas of life to recover alongside navigating
-                    the personal impacts of the experience.</p>
+            <h2>Sharing your story</h2>
 
-                <h2>Sharing your story</h2>
+            <p>You may find recording your thoughts, and feelings through is helpful.
+                Over time, self-trust and confidence may grow as you experience healthier responses to your
+                emotional, mental and physical needs and desires in life.
+                Think about regular activities that help you feel calmer, share your life with others or gain
+                valuable restorative time by yourself.
+                Accessing one time and ongoing support may be important. Some people find joining peer
+                support groups helpful, as getting to know others with similar experiences can provide a
+                place where acceptance is an important value and others can help with strategies to cope with
+                the multiple effects of online romance fraud.
+                Counselling and therapy may also be powerful with a non-judgemental, skilled therapist who
+                provides a safe and confidential space to work through your concerns and what is best for
+                you in the future.
+                (Checklist /hyperlink to resources.)
+                Learning coping strategies for the future.
+                Healing and recovery with hurtful and life changing experiences is an individual and unique
+                process. Learning about your own needs and vulnerabilities can increase your self-respect
+                and ability to protect yourself in future life.
+                (Red/green flag guide?)</p>
 
-                <p>You may find recording your thoughts, and feelings through is helpful.
-                    Over time, self-trust and confidence may grow as you experience healthier responses to your
-                    emotional, mental and physical needs and desires in life.
-                    Think about regular activities that help you feel calmer, share your life with others or gain
-                    valuable restorative time by yourself.
-                    Accessing one time and ongoing support may be important. Some people find joining peer
-                    support groups helpful, as getting to know others with similar experiences can provide a
-                    place where acceptance is an important value and others can help with strategies to cope with
-                    the multiple effects of online romance fraud.
-                    Counselling and therapy may also be powerful with a non-judgemental, skilled therapist who
-                    provides a safe and confidential space to work through your concerns and what is best for
-                    you in the future.
-                    (Checklist /hyperlink to resources.)
-                    Learning coping strategies for the future.
-                    Healing and recovery with hurtful and life changing experiences is an individual and unique
-                    process. Learning about your own needs and vulnerabilities can increase your self-respect
-                    and ability to protect yourself in future life.
-                    (Red/green flag guide?)</p>
+            <b>(How do we want the last bits laid out?)</b>
         </div>
     </div>
 </body>
@@ -1082,12 +1557,20 @@
 
     }
 
-    $('#landing').click(function (event) {
-        var landingContent = $('#landingContent');
-        landingContent.fadeOut();
+    $('#landingbutton').click(function (event) {
+        document.getElementById("landing").scrollIntoView();
+    })
 
-        var section1 = $('#section1');
-        section1.fadeIn();
+    $('#section1button').click(function (event) {
+        document.getElementById("section1").scrollIntoView();
+    })
+
+    $('#section2button').click(function (event) {
+        document.getElementById("section2").scrollIntoView();
+    })
+
+    $('#section3button').click(function (event) {
+        document.getElementById("section3").scrollIntoView();
     })
 
 </script>
