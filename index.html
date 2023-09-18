@@ -3,8 +3,8 @@
 <html lang="en">
 
 <head>
-    <title>Toolkit Name Here</title>
-    <meta name="description" content="Toolkit Description Here">
+    <title>Online Romance Fraud Toolkit</title>
+    <meta name="description" content="Online Romance Fraud Toolkit">
     <meta charset="utf-8">
     <meta name="author" content="Who's the author?">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +27,53 @@
 </head>
 
 <body>
+
+    <!-- README
+
+        TODO:
+        
+        - Section called "Sophia's Notes"
+        - Sophia's picture is currently in the file structure. Can this be pulled from the university website?
+        - Inline titles such as "Some User Stories" can be improved
+        - Change logos on cards as they're wrong
+        - Victims often experience section has text which doesn't match headers such as blame, shame, fear etc.
+        - How can I get help section is messy
+        - JQuery page showing and hiding
+        - Blurb
+        - Toolkit
+        - Cycle of abuse
+        - Speech bubbles
+        - Under be supportive - Some missing information
+
+        
+        
+        
+        - Online romance fraud defined fix section up a tad
+        
+        - Navigation button hover pretty
+        
+        
+
+        Done:
+
+        - Roisin t PI on investigators 
+        - Fix roisins name on cards 
+        - Add fullstop after "both now and in the future"
+        - "2 Eventually,"
+        - Red/green flag guide?
+        - checklist /hyperlink to resources
+        - What are some signs make better - Can we centre it?
+        - Same for victims often experience
+        - Some user stories -> Personal stores of online romance fraud
+        - I was talking to one friend - Make quote stand out more
+        - Do the same with other quotes
+
+        Can't yet do:
+
+        - Header -> Currently written in this file. Can it inherit the university's one?
+        - Footer -> Can we inherit the university one?
+
+     -->
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
@@ -85,126 +132,133 @@
         }
     </style>
 
-    <!-- Introduction -->
 
-    <div class="header header--big header--offset"
-        style="background-image: url(&quot;https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80&quot;); margin-top: 0;">
-        <div class="header__container container">
-            <div class="header__content">
-                <a href="/" class="main-nav__logo"><svg width="237" height="100" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 178 75" enable-background="new 0 0 178 75" xml:space="preserve"
-                        class="main-nav__svg">
-                        <title>University of Essex homepage</title>
-                        <rect x="30" width="15" height="15"></rect>
-                        <rect x="15" y="15" width="15" height="15"></rect>
-                        <rect x="30" y="30" width="15" height="15"></rect>
-                        <rect x="15" y="45" width="15" height="15"></rect>
-                        <rect x="30" y="60" width="15" height="15"></rect>
-                        <path d="M86.1,21c-1.7,0-3,1-3.7,2.5h0v-2.2h-1.7v12.1h1.8v-6.3c0-1.2,0.2-2.3,0.9-3.3c0.6-0.8,1.5-1.2,2.5-1.2
-					c0.8,0,1.7,0.4,2.1,1.1c0.4,0.6,0.3,1.5,0.3,2.2v7.5h1.8v-6.7c0-1.2,0-2.8-0.6-3.8C88.8,21.7,87.6,21,86.1,21z M94.2,33.4V21.4
-					h-1.8v12.1H94.2z M94.3,17.1h-2v2.1h2V17.1z M121.1,27.3c0-1,0.1-1.7,0.6-2.6c0.7-1.2,1.7-1.9,3.1-1.9h0.4v-1.8l-0.7,0
-					c-1.9,0-3,1.5-3.5,3.2h0v-2.8h-1.7v12.1h1.8V27.3z M131,32.1c-1.4,0-3.4-0.6-3.6-2.3l-1.8,0.4c0.6,2.5,2.9,3.4,5.3,3.4
-					c2.3,0,5-1,5-3.7c0-1.1-0.5-2.1-1.4-2.7c-0.7-0.5-1.6-0.7-2.5-0.8l-1.7-0.3c-1.1-0.2-2.1-0.5-2.1-1.8c0-1.3,1.5-1.8,2.6-1.8
-					c1.4,0,2.6,0.6,3.1,1.9l1.7-0.4c-0.6-2.2-2.6-3-4.7-3c-2.2,0-4.5,1-4.5,3.5c0,2.1,1.7,3,3.5,3.4l2,0.4c1,0.2,2.3,0.5,2.3,1.8
-					C133.9,31.7,132.3,32.1,131,32.1z M139.8,33.4V21.4h-1.8v12.1H139.8z M139.9,17.1h-2v2.1h2V17.1z M79.2,45.9h-2.1v1.5h2.1V58h1.8
-					V47.4h2.8v-1.5h-2.8c0-1.5,0-3,2-3c0.5,0,1,0.1,1.5,0.2l0.4-1.5l-1.7-0.2C80.4,41.2,79.1,43.4,79.2,45.9z M92.4,50.3h6.4v-1.6
-					h-6.4v-5.2h8.1v-1.8H90.3V58h10.5v-1.8h-8.4V50.3z M110.5,51.8c-0.7-0.5-1.6-0.7-2.5-0.8l-1.7-0.3c-1.1-0.2-2.1-0.5-2.1-1.8
-					c0-1.3,1.5-1.8,2.5-1.8c1.4,0,2.6,0.6,3.1,1.9l1.7-0.4c-0.6-2.2-2.6-3-4.7-3c-2.2,0-4.5,1-4.5,3.5c0,2.1,1.7,3,3.5,3.3l2,0.4
-					c1,0.2,2.3,0.5,2.3,1.8c0,1.5-1.6,2-2.9,2c-1.4,0-3.4-0.6-3.6-2.3l-1.8,0.4c0.6,2.5,2.9,3.4,5.3,3.4c2.3,0,5-1,5-3.7
-					C111.9,53.4,111.5,52.4,110.5,51.8z M122,51.8c-0.7-0.5-1.6-0.7-2.5-0.8l-1.7-0.3c-1.1-0.2-2.1-0.5-2.1-1.8c0-1.3,1.5-1.8,2.6-1.8
-					c1.4,0,2.6,0.6,3.1,1.9l1.7-0.4c-0.6-2.2-2.6-3-4.7-3c-2.2,0-4.5,1-4.5,3.5c0,2.1,1.7,3,3.5,3.3l2,0.4c1,0.2,2.3,0.5,2.3,1.8
-					c0,1.5-1.6,2-2.9,2c-1.4,0-3.4-0.6-3.6-2.3l-1.8,0.4c0.6,2.5,2.9,3.4,5.3,3.4c2.3,0,5-1,5-3.7C123.5,53.4,123,52.4,122,51.8z
-					 M130.1,45.6c-3.6,0-5.6,3-5.6,6.4c0,3.4,1.9,6.3,5.5,6.3c2.3,0,4.4-1.3,5.1-3.5l-1.8-0.4c-0.5,1.4-1.7,2.3-3.2,2.3
-					c-1.3,0-2.5-0.7-3.1-1.8c-0.4-0.9-0.5-1.8-0.5-2.7h8.7C135.5,48.8,133.9,45.6,130.1,45.6z M126.7,50.7c0.1-1.9,1.4-3.7,3.4-3.7
-					c2.1,0,3.2,1.7,3.2,3.7H126.7z M117.1,30.1l-1.8-0.4c-0.5,1.4-1.7,2.3-3.2,2.3c-1.3,0-2.5-0.7-3.1-1.8c-0.4-0.9-0.5-1.8-0.5-2.7
-					h8.7c0.1-3.4-1.5-6.5-5.3-6.5c-3.6,0-5.6,3-5.6,6.4c0,3.4,1.9,6.3,5.5,6.3C114.3,33.7,116.4,32.4,117.1,30.1z M112.1,22.5
-					c2.1,0,3.2,1.7,3.2,3.7h-6.6C108.7,24.3,110,22.5,112.1,22.5z M71.4,45.6c-3.6,0-5.5,2.9-5.5,6.2c0,3.2,1.6,6.4,5.2,6.4
-					c3.6,0,5.6-3,5.6-6.3C76.7,48.7,74.9,45.6,71.4,45.6z M74,55c-0.6,1.1-1.5,1.7-2.8,1.7c-1.1,0-2.1-0.6-2.6-1.5
-					c-0.5-1-0.7-2.2-0.7-3.3c0-1,0.1-2.1,0.6-3c0.5-1,1.6-1.7,2.7-1.7c1,0,2,0.5,2.6,1.4c0.6,1,0.8,2.2,0.8,3.3
-					C74.6,52.9,74.5,54,74,55z M78.5,17.1h-2v10.3c0,1,0,2.3-0.7,3.2c-0.7,0.9-2.4,1.2-3.6,1.3c-1.2,0-2.6-0.3-3.3-1.3
-					c-0.7-0.9-0.7-2.2-0.7-3.2V17.1h-2.3v10.3c0,1.7,0.1,3.3,1.4,4.7c1.2,1.2,3.1,1.6,4.8,1.6h0c1.8,0,3.6-0.3,4.8-1.6
-					c1.3-1.3,1.4-3,1.4-4.7V17.1z M145.5,46L145.5,46l-1.9-0.1l0,0L141,50l-2.5-4.1h-2.2l3.6,5.8l-4,6.3l-0.1,0.1h1.9l0,0l3.1-4.9
-					l3,4.9h2.2l-4.1-6.7L145.5,46z M101.9,33.5l4.1-12.1l0-0.1h-1.8l0,0l-3.3,9.8l-3.3-9.8h-2.1l4.3,12.1L101.9,33.5z M157.8,21.3
-					L157.8,21.3l-3.3,9.1l-3.2-9l-5.7,0V17l-1.8,0.2v4.2h-2.1v1.5h2.1v6.7c0,2.4,0.8,3.9,3.4,3.9l1.8-0.1v-1.5l-1.4,0.1
-					c-1.5,0-1.9-0.7-1.9-2.1v-7h4.3l0,0l3.6,10.4l-0.1,0.4c-0.4,1.3-0.9,2.5-2.5,2.5c-0.4,0-0.8-0.1-1.2-0.2l-0.1,0v1.6l0,0
-					c0.4,0.1,0.9,0.2,1.4,0.2c1.1,0,1.7-0.1,2.5-0.9c0.7-0.7,0.9-1.4,1.2-2.3c0,0,4.7-13.2,4.7-13.2l0-0.1H157.8z"
-                            class="main-nav__svg-text"></path>
-                    </svg></a>
-                <div class="breadcrumb"><a href="/" class="breadcrumb__item"><svg width="20" height="20"
-                            class="icon breadcrumb__icon">
+
+    <!-- Landing Page -->
+
+    <div id="landingSection" class="">
+
+        <!-- Introduction -->
+
+        <div class="header header--big header--offset"
+            style="background-image: url(&quot;https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80&quot;); margin-top: 0;">
+            <div class="header__container container">
+                <div class="header__content">
+                    <a href="/" class="main-nav__logo"><svg width="237" height="100" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 178 75" enable-background="new 0 0 178 75" xml:space="preserve"
+                            class="main-nav__svg">
                             <title>University of Essex homepage</title>
-                            <use xlink:href="#icon-home"></use>
-                        </svg></a> <span class="breadcrumb__divider"></span> <a
-                        href="https://www.essex.ac.uk/research-projects" class="breadcrumb__item">
-                        Research Projects
-                    </a> <span class="breadcrumb__divider"></span> <span class="breadcrumb__item">
-                        Holding Hands
-                    </span></div>
-                <div class="page-title muted-red">Research Project</div>
-                <div class="responsive-font" style="font-size: 10px;">
-                    <h1 class="page-subtitle page-subtitle--big"><b>Romance Fraud Toolkit Name Here</b></h1>
+                            <rect x="30" width="15" height="15"></rect>
+                            <rect x="15" y="15" width="15" height="15"></rect>
+                            <rect x="30" y="30" width="15" height="15"></rect>
+                            <rect x="15" y="45" width="15" height="15"></rect>
+                            <rect x="30" y="60" width="15" height="15"></rect>
+                            <path
+                                d="M86.1,21c-1.7,0-3,1-3.7,2.5h0v-2.2h-1.7v12.1h1.8v-6.3c0-1.2,0.2-2.3,0.9-3.3c0.6-0.8,1.5-1.2,2.5-1.2
+                c0.8,0,1.7,0.4,2.1,1.1c0.4,0.6,0.3,1.5,0.3,2.2v7.5h1.8v-6.7c0-1.2,0-2.8-0.6-3.8C88.8,21.7,87.6,21,86.1,21z M94.2,33.4V21.4
+                h-1.8v12.1H94.2z M94.3,17.1h-2v2.1h2V17.1z M121.1,27.3c0-1,0.1-1.7,0.6-2.6c0.7-1.2,1.7-1.9,3.1-1.9h0.4v-1.8l-0.7,0
+                c-1.9,0-3,1.5-3.5,3.2h0v-2.8h-1.7v12.1h1.8V27.3z M131,32.1c-1.4,0-3.4-0.6-3.6-2.3l-1.8,0.4c0.6,2.5,2.9,3.4,5.3,3.4
+                c2.3,0,5-1,5-3.7c0-1.1-0.5-2.1-1.4-2.7c-0.7-0.5-1.6-0.7-2.5-0.8l-1.7-0.3c-1.1-0.2-2.1-0.5-2.1-1.8c0-1.3,1.5-1.8,2.6-1.8
+                c1.4,0,2.6,0.6,3.1,1.9l1.7-0.4c-0.6-2.2-2.6-3-4.7-3c-2.2,0-4.5,1-4.5,3.5c0,2.1,1.7,3,3.5,3.4l2,0.4c1,0.2,2.3,0.5,2.3,1.8
+                C133.9,31.7,132.3,32.1,131,32.1z M139.8,33.4V21.4h-1.8v12.1H139.8z M139.9,17.1h-2v2.1h2V17.1z M79.2,45.9h-2.1v1.5h2.1V58h1.8
+                V47.4h2.8v-1.5h-2.8c0-1.5,0-3,2-3c0.5,0,1,0.1,1.5,0.2l0.4-1.5l-1.7-0.2C80.4,41.2,79.1,43.4,79.2,45.9z M92.4,50.3h6.4v-1.6
+                h-6.4v-5.2h8.1v-1.8H90.3V58h10.5v-1.8h-8.4V50.3z M110.5,51.8c-0.7-0.5-1.6-0.7-2.5-0.8l-1.7-0.3c-1.1-0.2-2.1-0.5-2.1-1.8
+                c0-1.3,1.5-1.8,2.5-1.8c1.4,0,2.6,0.6,3.1,1.9l1.7-0.4c-0.6-2.2-2.6-3-4.7-3c-2.2,0-4.5,1-4.5,3.5c0,2.1,1.7,3,3.5,3.3l2,0.4
+                c1,0.2,2.3,0.5,2.3,1.8c0,1.5-1.6,2-2.9,2c-1.4,0-3.4-0.6-3.6-2.3l-1.8,0.4c0.6,2.5,2.9,3.4,5.3,3.4c2.3,0,5-1,5-3.7
+                C111.9,53.4,111.5,52.4,110.5,51.8z M122,51.8c-0.7-0.5-1.6-0.7-2.5-0.8l-1.7-0.3c-1.1-0.2-2.1-0.5-2.1-1.8c0-1.3,1.5-1.8,2.6-1.8
+                c1.4,0,2.6,0.6,3.1,1.9l1.7-0.4c-0.6-2.2-2.6-3-4.7-3c-2.2,0-4.5,1-4.5,3.5c0,2.1,1.7,3,3.5,3.3l2,0.4c1,0.2,2.3,0.5,2.3,1.8
+                c0,1.5-1.6,2-2.9,2c-1.4,0-3.4-0.6-3.6-2.3l-1.8,0.4c0.6,2.5,2.9,3.4,5.3,3.4c2.3,0,5-1,5-3.7C123.5,53.4,123,52.4,122,51.8z
+                 M130.1,45.6c-3.6,0-5.6,3-5.6,6.4c0,3.4,1.9,6.3,5.5,6.3c2.3,0,4.4-1.3,5.1-3.5l-1.8-0.4c-0.5,1.4-1.7,2.3-3.2,2.3
+                c-1.3,0-2.5-0.7-3.1-1.8c-0.4-0.9-0.5-1.8-0.5-2.7h8.7C135.5,48.8,133.9,45.6,130.1,45.6z M126.7,50.7c0.1-1.9,1.4-3.7,3.4-3.7
+                c2.1,0,3.2,1.7,3.2,3.7H126.7z M117.1,30.1l-1.8-0.4c-0.5,1.4-1.7,2.3-3.2,2.3c-1.3,0-2.5-0.7-3.1-1.8c-0.4-0.9-0.5-1.8-0.5-2.7
+                h8.7c0.1-3.4-1.5-6.5-5.3-6.5c-3.6,0-5.6,3-5.6,6.4c0,3.4,1.9,6.3,5.5,6.3C114.3,33.7,116.4,32.4,117.1,30.1z M112.1,22.5
+                c2.1,0,3.2,1.7,3.2,3.7h-6.6C108.7,24.3,110,22.5,112.1,22.5z M71.4,45.6c-3.6,0-5.5,2.9-5.5,6.2c0,3.2,1.6,6.4,5.2,6.4
+                c3.6,0,5.6-3,5.6-6.3C76.7,48.7,74.9,45.6,71.4,45.6z M74,55c-0.6,1.1-1.5,1.7-2.8,1.7c-1.1,0-2.1-0.6-2.6-1.5
+                c-0.5-1-0.7-2.2-0.7-3.3c0-1,0.1-2.1,0.6-3c0.5-1,1.6-1.7,2.7-1.7c1,0,2,0.5,2.6,1.4c0.6,1,0.8,2.2,0.8,3.3
+                C74.6,52.9,74.5,54,74,55z M78.5,17.1h-2v10.3c0,1,0,2.3-0.7,3.2c-0.7,0.9-2.4,1.2-3.6,1.3c-1.2,0-2.6-0.3-3.3-1.3
+                c-0.7-0.9-0.7-2.2-0.7-3.2V17.1h-2.3v10.3c0,1.7,0.1,3.3,1.4,4.7c1.2,1.2,3.1,1.6,4.8,1.6h0c1.8,0,3.6-0.3,4.8-1.6
+                c1.3-1.3,1.4-3,1.4-4.7V17.1z M145.5,46L145.5,46l-1.9-0.1l0,0L141,50l-2.5-4.1h-2.2l3.6,5.8l-4,6.3l-0.1,0.1h1.9l0,0l3.1-4.9
+                l3,4.9h2.2l-4.1-6.7L145.5,46z M101.9,33.5l4.1-12.1l0-0.1h-1.8l0,0l-3.3,9.8l-3.3-9.8h-2.1l4.3,12.1L101.9,33.5z M157.8,21.3
+                L157.8,21.3l-3.3,9.1l-3.2-9l-5.7,0V17l-1.8,0.2v4.2h-2.1v1.5h2.1v6.7c0,2.4,0.8,3.9,3.4,3.9l1.8-0.1v-1.5l-1.4,0.1
+                c-1.5,0-1.9-0.7-1.9-2.1v-7h4.3l0,0l3.6,10.4l-0.1,0.4c-0.4,1.3-0.9,2.5-2.5,2.5c-0.4,0-0.8-0.1-1.2-0.2l-0.1,0v1.6l0,0
+                c0.4,0.1,0.9,0.2,1.4,0.2c1.1,0,1.7-0.1,2.5-0.9c0.7-0.7,0.9-1.4,1.2-2.3c0,0,4.7-13.2,4.7-13.2l0-0.1H157.8z"
+                                class="main-nav__svg-text"></path>
+                        </svg></a>
+                    <div class="breadcrumb"><a href="/" class="breadcrumb__item"><svg width="20" height="20"
+                                class="icon breadcrumb__icon">
+                                <title>University of Essex homepage</title>
+                                <use xlink:href="#icon-home"></use>
+                            </svg></a> <span class="breadcrumb__divider"></span> <a
+                            href="https://www.essex.ac.uk/research-projects" class="breadcrumb__item">
+                            Research Projects
+                        </a> <span class="breadcrumb__divider"></span> <span class="breadcrumb__item">
+                            Holding Hands
+                        </span></div>
+                    <div class="page-title muted-red">Research Project</div>
+                    <div class="responsive-font" style="font-size: 10px;">
+                        <h1 class="page-subtitle page-subtitle--big"><b>Online Romance Fraud Toolkit</b></h1>
+                    </div>
+                    <div class="header__profile">
+                        <div class="small-title">Principal Investigators</div>
+                    </div>
+                    <div class="principal-investigator"> Prof. Róisín Ryan-Flood
+                        <br>
+                        Dr. Katerina Hadjimatheou
+                        <br>
+                        Sophia Carbonero <br>
+                    </div>
                 </div>
-                <div class="header__profile">
-                    <div class="small-title">Principal Investigators</div>
+                <div class="header__image"><img
+                        src="https://images.unsplash.com/photo-1515871204537-49a5fe66a31f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1382&q=80"
+                        alt="Put alt here" class="js-object-fit-image">
                 </div>
-                <div class="principal-investigator"> Prof. Róisín Ryan-Flood
-                    <br>
-                    Name here
-                    <br>
-                    Name here <br>
-                </div>
-            </div>
-            <div class="header__image"><img
-                    src="https://images.unsplash.com/photo-1515871204537-49a5fe66a31f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1382&q=80"
-                    alt="Put alt here" class="js-object-fit-image">
             </div>
         </div>
-    </div>
 
-    <div class="container intro-section">
-        <div class="grid grid--flex no-gutter grid--12">
-            <div class="grid__item grid__item--span-12 grid__item--span-tablet-4 grid__item--span-desktop-3">
-                <div class="intro-section__image-holder page-margin-lg-tablet">
-                    <div class="intro-section__image"
-                        style="background-image: url(&quot;https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80&quot;);">
+        <div class="container intro-section">
+            <div class="grid grid--flex no-gutter grid--12">
+                <div class="grid__item grid__item--span-12 grid__item--span-tablet-4 grid__item--span-desktop-3">
+                    <div class="intro-section__image-holder page-margin-lg-tablet">
+                        <div class="intro-section__image"
+                            style="background-image: url(&quot;https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80&quot;);">
+                        </div>
+                        <div class="side-nav-holder">
+                            <div class="js-sticky-item sticky is-reach-end is-reach-start sticky--nav"
+                                is-sidebar="true">
+                                <div style="padding-bottom: 0px;"></div>
+                                <div class="sticky__inner">
+                                    <section class="ps-container scroll-area ps ps--theme_default"
+                                        data-ps-id="b485ca17-4059-5bb0-8750-80795870c094">
+                                        <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+                                            <div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;">
+                                            </div>
+                                        </div>
+                                        <div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;">
+                                            <div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;">
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="side-nav-holder">
-                        <div class="js-sticky-item sticky is-reach-end is-reach-start sticky--nav" is-sidebar="true">
-                            <div style="padding-bottom: 0px;"></div>
-                            <div class="sticky__inner">
-                                <section class="ps-container scroll-area ps ps--theme_default"
-                                    data-ps-id="b485ca17-4059-5bb0-8750-80795870c094">
-                                    <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-                                        <div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                                    </div>
-                                    <div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;">
-                                        <div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-                                    </div>
-                                </section>
+                </div>
+                <div
+                    class="grid__item grid__item--span-12 grid__item--span-tablet-8 grid__item--span-desktop-9 page-margin-rg page-margin-md-tablet page-margin-lg-desktop">
+                    <div
+                        class="page-margin-rg page-margin-xl-tablet page-margin-xxl-desktop padding-xl padding-xxl-tablet padding-xxxl-desktop">
+                        <div class="richtext">
+                            <h2><b>Online Romance Fraud Toolkit</b></h2>
+                            <div class="pullout-text">
+                                <p>Blurb about the project ... </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div
-                class="grid__item grid__item--span-12 grid__item--span-tablet-8 grid__item--span-desktop-9 page-margin-rg page-margin-md-tablet page-margin-lg-desktop">
-                <div
-                    class="page-margin-rg page-margin-xl-tablet page-margin-xxl-desktop padding-xl padding-xxl-tablet padding-xxxl-desktop">
-                    <div class="richtext">
-                        <h2><b>Romance Fraud Toolkit Name Here</b></h2>
-                        <div class="pullout-text">
-                            <p>Blurb about the project ... </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
 
-    <!-- Landing Page -->
-
-    <div id="landingContent" class="">
         <!-- Side Hero Image -->
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse g-5 py-5">
@@ -249,14 +303,13 @@
                                     compassion</li>
                             </ul>
                         </li>
-                        <li><b>****Sophia's Notes****</b></li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6">
                     <span id="section1button" class="button button--primary">
-                            More Details
+                        More Details
                     </span>
                 </div>
             </div>
@@ -317,7 +370,7 @@
             <div class="row">
                 <div class="col-6">
                     <span id="section2button" class="button button--primary">
-                            More Details
+                        More Details
                     </span>
                 </div>
             </div>
@@ -357,7 +410,7 @@
             <div class="row">
                 <div class="col-6">
                     <span id="section3button" class="button button--primary">
-                            More Details
+                        More Details
                     </span>
                 </div>
             </div>
@@ -384,9 +437,9 @@
                                     </h3>
                                     <div class="story-card__summary">
                                         <div class="staff-card__position">
-                                            <p>Co-Investigator</p>
-                                            The Department of Sociology, <span
-                                                class="staff-card__strong-text">University of Essex</span>
+                                            <p>Principal Investigator</p>
+                                            Department of Sociology, <span class="staff-card__strong-text">University of
+                                                Essex</span>
                                         </div>
                                         <div class="staff-card__position">
                                             <p></p>
@@ -396,22 +449,24 @@
                             </div>
                         </a>
                     </div>
-                    <div class="grid__item grid__item--span-12"><a href="#" class="story-card story-card--profile">
+                    <div class="grid__item grid__item--span-12"><a
+                            href="https://www.essex.ac.uk/people/hadji61805/katerina-hadjimatheou"
+                            class="story-card story-card--profile">
                             <figure class="story-card__figure"><img width="500"
                                     data-src="http://www1.essex.ac.uk/people-images/WALSH20801.jpg?mh=500&amp;mw=500"
-                                    alt="Name here  " class="js-object-fit-image lazyloaded"
-                                    src="https://images.unsplash.com/photo-1544502062-f82887f03d1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1559&q=80">
+                                    alt="Doctor Katerina Hadjimatheou  " class="js-object-fit-image lazyloaded"
+                                    src="http://www1.essex.ac.uk/people-images/HADJI61805.jpg">
                             </figure>
                             <div class="story-card__content">
                                 <div class="story-card__content-inner">
                                     <h3 class="story-card__title purple">
-                                        Name here
+                                        Dr. Katerina Hadjimatheou
                                     </h3>
                                     <div class="story-card__summary">
                                         <div class="staff-card__position">
                                             <p>Co-Investigator</p>
-                                            The Department of Psychosocial and Psychoanalytic Studies, <span
-                                                class="staff-card__strong-text">University of Essex</span>
+                                            Department of Sociology, <span class="staff-card__strong-text">University of
+                                                Essex</span>
                                         </div>
                                         <div class="staff-card__position">
                                             <p></p>
@@ -421,21 +476,22 @@
                             </div>
                         </a>
                     </div>
-                    <div class="grid__item grid__item--span-12"><a href="#" class="story-card story-card--profile">
-                            <figure class="story-card__figure"><img width="500"
-                                    data-src="http://www1.essex.ac.uk/people-images/WALSH20801.jpg?mh=500&amp;mw=500"
-                                    alt="Name here" class="js-object-fit-image lazyloaded"
-                                    src="https://images.unsplash.com/photo-1544502062-f82887f03d1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1559&q=80">
+                    <div class="grid__item grid__item--span-12"><a
+                            href="https://www.essex.ac.uk/people/carbo45701/sophia-carbonero"
+                            class="story-card story-card--profile">
+                            <figure class="story-card__figure"><img width="500" data-src="/images/sophiapotrait.jpg"
+                                    alt="Sophia Carbonero" class="js-object-fit-image lazyloaded"
+                                    src="images/sophiapotrait.jpg">
                             </figure>
                             <div class="story-card__content">
                                 <div class="story-card__content-inner">
                                     <h3 class="story-card__title purple">
-                                        Name here
+                                        Sophia Carbonero
                                     </h3>
                                     <div class="story-card__summary">
                                         <div class="staff-card__position">
                                             <p>Co-Investigator</p>
-                                            The Department of Psychosocial and Psychoanalytic Studies, <span
+                                            School of Health and Social Care, <span
                                                 class="staff-card__strong-text">University of Essex</span>
                                         </div>
                                         <div class="staff-card__position">
@@ -452,7 +508,9 @@
 
         <!-- Stories  -->
         <div class="container px-4 py-5" id="icon-grid">
-            <h2 class="pb-2 border-bottom">Some User Stories</h2>
+            <div class="richtext mb-5">
+                <h2 class="pb-2 border-bottom">Personal stores of online romance fraud</h2>
+            </div>
 
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -666,7 +724,11 @@
         <!-- Some External Resources -->
         <div class="container px-4 py-5" id="custom-cards">
 
-            <h1 class="pb-2 border-bottom">Some External Resources</h1>
+            <div class="richtext">
+                <h2 class="pb-2 border-bottom">Some External Resources</h2>
+            </div>
+
+
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
@@ -689,8 +751,8 @@
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
                         style="background-image: url('https://images.unsplash.com/photo-1590602847861-f357a9332bbc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h4 class="pt-5 mb-4 display-6 lh-1">Podcast on romance fraud with David Buil-Gil, Roisin
-                                Ryan-Floord and David Gillies </h4>
+                            <h4 class="pt-5 mb-4 display-6 lh-1">Podcast on romance fraud with David Buil-Gil, Róisín
+                                Ryan-Flood and David Gillies </h4>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
                                     <img src="https://www.understandingsociety.ac.uk/sites/all/themes/understanding_society/images/ukhls-logo.svg"
@@ -722,7 +784,7 @@
     </div>
 
     <!-- Section 1 -->
-    <div id="section1" class="">
+    <div id="section1">
 
         <div id="section1Title" class="bg-dark text-secondary px-4 py-5 text-center">
             <div class="py-5">
@@ -736,18 +798,31 @@
 
         <!-- How can I get help? -->
         <div class="container px-4 py-5" id="icon-grid">
-            <h2 class="pb-2 border-bottom">Online Romance Fraud Defined</h2>
+            <div class="richtext mb-5">
+                <h2 class="pb-2 border-bottom">Online Romance Fraud Defined</h2>
+            </div>
 
-            <p>Romance Fraud is the creation of a supposed friendship or relationship to exploit somebody
+            <p class="mb-5">Romance Fraud is the creation of a supposed friendship or relationship to exploit somebody
                 for financial gain. Typically, fraudsters seek access to people online with the pretence of
                 seeking a relationship. Fraudsters invest significant amounts of time into manipulating their
                 victims with the knowledge that as they gain their victim’s trust, the chances of getting money
                 from them increases.</p>
+
+            <div class="row">
+                <div class="col-6">
+                    <span class="landingbutton button button--primary">
+                        Back to Top
+                    </span>
+                </div>
+            </div>
         </div>
 
         <!-- What are some signs -->
         <div class="container px-4 py-5" id="icon-grid">
-            <h2 class="pb-2 border-bottom">What are some signs?</h2>
+            <div class="richtext">
+                <h2 class="pb-2 border-bottom">What are some signs?</h2>
+            </div>
+
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
                 <div class="col d-flex align-items-start">
@@ -814,123 +889,90 @@
 
         <!-- Victims Often Experience? -->
         <div class="container px-4 py-5" id="icon-grid">
-            <h2 class="pb-2 border-bottom">Victims Often Experience</h2>
+
+            <div class="richtext">
+                <h2 class="pb-2 border-bottom">Victims Often Experience</h2>
+            </div>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Blame</h4>
-                        <p>Romance fraud is typically a long-term scheme.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Shame</h4>
-                        <p>The fraudster will typically present themself as genuine romantic prospect, in order to gain
-                            your
-                            trust.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Anger</h4>
-                        <p>Online grooming and psychological abuse are used to undermine a potential victim's sense of
-                            disbelief.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Denial</h4>
-                        <p>They may study your online profiles to present their fake persona as exactly what you are
-                            looking
-                            for.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Fear</h4>
-                        <p>A fraudster may not be blunt with their requests. They may hide requests for money as
-                            requests
-                            for affection.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Guilt</h4>
-                        <p>They may also be bold in their requests in an attempt to make a victim feel fear if they
-                            don't
-                            send money.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Loneliness</h4>
-                        <p>Fraudsters may carefully manage the relationship so as not to give away the ruse. They
-                            will
-                            likely try and keep the relationship online.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Overwhelmed</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Resentment</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Failure</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Sadness</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Emptiness</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Embarrassment</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Loss of Identity</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Loss of Confidence</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
                     <div>
                         <h4 class="fw-bold mb-0">Loss of self-esteem/self-worth</h4>
-                        <p>It is easy to fall for this type of fraud. Scammers are often experienced and know how to
-                            manipulate. If something feels off, it could be because the relationship is not genuine.</p>
                     </div>
                 </div>
             </div>
@@ -938,7 +980,10 @@
 
         <!-- Stories  -->
         <div class="container px-4 py-5" id="icon-grid">
-            <h2 class="pb-2 border-bottom">Some User Stories</h2>
+
+            <div class="richtext mb-5">
+                <h2 class="pb-2 border-bottom">Personal stores of online romance fraud</h2>
+            </div>
 
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -1015,7 +1060,7 @@
                             the
                             only thing that stopped her from harming herself was her care responsibilities for her
                             parents.
-                            2
+
                             Eventually, she confided in her mother and her best friend. Luckily, they were both kind and
                             understanding. She felt that they didn’t judge her and this was an important part of her
                             healing
@@ -1152,7 +1197,11 @@
         <!-- Some External Resources -->
         <div class="container px-4 py-5" id="custom-cards">
 
-            <h2 class="pb-2 border-bottom">Some External Resources</h2>
+            <div class="richtext">
+                <h2 class="pb-2 border-bottom">Some External Resources</h2>
+            </div>
+
+
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
@@ -1298,7 +1347,14 @@
             </div>
         </div>
 
-        <div class="container px-4 py-5">
+        <div class="container px-4 py-5 richtext">
+            <div class="row mb-5">
+                <div class="col-6">
+                    <span class="landingbutton button button--primary">
+                        Back to Top
+                    </span>
+                </div>
+            </div>
             <h2><b>Family and Friends</b></h2>
 
             <p>
@@ -1317,7 +1373,7 @@
                 from romance fraud. Here we share some do’s and don’ts to help you support that person:
             </p>
 
-            <p><b>DO</b></p>
+            <h3>Do</h3>
 
             <ul>
                 <li>Remember that, for victims of romance fraud, the romantic relationship is real. Being
@@ -1347,7 +1403,7 @@
                     psychological and emotional fallout.</li>
             </ul>
 
-            <p><b>DON'T</b></p>
+            <h3>Don't</h3>
 
             <ul>
                 <li>Judge, blame or shame victims for what has happened to them. Victims of romance
@@ -1368,14 +1424,14 @@
                     more effectively</li>
             </ul>
 
-            <p>"I was talking to one friend and she, instead of supports me, she judges me. ..that's not
+            <p><em><h4>"I was talking to one friend and she, instead of supports me, she judges me. ..that's not
                 nice… it's the worst. So, I'd rather keep to myself now because I know how to deal, to dealt with
                 it. Because it's painful the way I went. I had enough to go through and the last thing you need
-                [is] to be judged."</p>
+                [is] to be judged."</h4></em></p>
 
             <h2><b>Professionals</b></h2>
 
-            <p><b>DO</b></p>
+            <h3>Do</h3>
 
             <ul>
                 <li>Inform yourself about the dynamics of romance fraud and the methods used by
@@ -1393,7 +1449,7 @@
                     that there is no progress, or that you have done all you can.</li>
             </ul>
 
-            <p><b>DON'T</b></p>
+            <h3>Don't</h3>
 
             <ul>
                 <li>Blame or shame victims for what has happened to them. Victims of romance fraud
@@ -1407,13 +1463,11 @@
                     some have ended their lives</li>
 
             </ul>
-            Fraud Prevention Practitioner: "We need to try and understand it from the victims
-            perspective so we may gently walk beside them back to reality"
-            <br>
-            <br>
+
+
+            <p><em><h4>Fraud Prevention Practitioner: "We need to try and understand it from the victims
+            perspective so we may gently walk beside them back to reality"</h4></em></p>
             <ul>
-
-
                 <li>Assume that victims know anything about how to protect themselves and their
                     finances. They likely won’t. Give victims all the information they might need and
                     signpost them to where they can report the fraud, get legal, financial, emotional or
@@ -1422,11 +1476,10 @@
                     Victims should be informed of their options.</li>
             </ul>
 
-            <p>"When I spoke to [a victim support worker] and you know, she, she was, she
+            <p><em><h4>"When I spoke to [a victim support worker] and you know, she, she was, she
                 was an absolute godsend for me at that point, because I needed to hear from
                 somebody that I wasn't stupid. I wasn't, you know, this pathetic woman. You know
-                that, that he was a professional...a fraudster. That was the turning point for me.”</p>
-
+                that, that he was a professional...a fraudster. That was the turning point for me.”</h4></em></p>
         </div>
     </div>
 
@@ -1442,25 +1495,35 @@
             </div>
         </div>
 
-        <div class="container px-4 py-5">
+        <div class="container px-4 py-5 richtext">
 
-            <p>The trauma of experiencing ORF can make it feel difficult to reach out for help and support.
+            <h2>Help is Available</h2>
+
+            <p class="mb-5">The trauma of experiencing ORF can make it feel difficult to reach out for help and support.
                 It can feel and be a very isolating experience when you are dealing with painful emotions, the
                 shock of the relationship and real losses in your life. It may feel impossible to share these
                 experiences with others in your life. You are not alone in going through such a painful
                 experience, as this can happen to anyone, of any age. There are important steps in beginning
                 to regain a sense of control, safety and healing from the effects on you and your life, both
-                now and in the future</p>
+                now and in the future.</p>
 
-            <h2>Safety Matters</h2>
+            <div class="row">
+                <div class="col-6">
+                    <span class="landingbutton button button--primary">
+                        Back to Top
+                    </span>
+                </div>
+            </div>
+
+            <h3>Safety Matters</h3>
 
             <p>
                 Securing your own personal safety and accessing the right help is vital to begin stabilising the
-                situation. The checklist here is a guide to steps to take to secure your immediate and long-term
-                safety.
+                situation. The guidance and resources in this site will support you with steps to take to secure your
+                immediate and long-term safety.
             </p>
 
-            <h2>You are Important</h2>
+            <h3>You are Important</h3>
 
             <p>
                 The idea of self-care may feel impossible when you have been so invalidated by another
@@ -1471,7 +1534,7 @@
                 how to address the situation for your present and future wellbeing.
             </p>
 
-            <h2>Your Emotions Matter</h2>
+            <h3>Your Emotions Matter</h3>
 
             <p>Grief, anxiety and shame are recognised effects of the impact of a romance fraud relationship.
                 You may experience anger and outrage and powerless in achieving any sense of justice and
@@ -1481,7 +1544,7 @@
                 hopes of what has been lost and what has been lost is real, and emotional support is vital to
                 help prevent a downwards spiral of self-blame, guilt and self-rejection.</p>
 
-            <h2>Acknowledge the hurt</h2>
+            <h3>Acknowledge the hurt</h3>
 
             <p>This relationship has been real and meaningful until the realisation that the other person was
                 not who you believed them to be. Emotions and thoughts can feel conflicted, even though
@@ -1494,7 +1557,7 @@
                 towards valuing yourself again and rebuilding your life. This understanding becomes a
                 valuable resource in protecting and regaining trust in yourself in your present and future life.</p>
 
-            <h2>Self-kindness</h2>
+            <h3>Self-kindness</h3>
 
             <p>A key point is reminding yourself, and be reminded by understanding others, that you are not
                 to blame for trusting another person who deliberately set out to deceive you. This is important
@@ -1513,7 +1576,7 @@
                 trained in understanding the difficulties you may be facing and are committed to help you in
                 a constructive and meaningful way.</p>
 
-            <h2>Healing and recovery are individual experiences</h2>
+            <h3>Healing and recovery are individual experiences</h3>
 
             <p>In any relationship, an identity forms from the people involved that is unique. Separating out
                 as an individual from this can both feel and be difficult. You may have had your confidence,
@@ -1525,52 +1588,104 @@
                 not a cut and dried process, there can be so many areas of life to recover alongside navigating
                 the personal impacts of the experience.</p>
 
-            <h2>Sharing your story</h2>
+            <h3>Sharing your story</h3>
 
             <p>You may find recording your thoughts, and feelings through is helpful.
-                Over time, self-trust and confidence may grow as you experience healthier responses to your
-                emotional, mental and physical needs and desires in life.
+
                 Think about regular activities that help you feel calmer, share your life with others or gain
                 valuable restorative time by yourself.
                 Accessing one time and ongoing support may be important. Some people find joining peer
                 support groups helpful, as getting to know others with similar experiences can provide a
                 place where acceptance is an important value and others can help with strategies to cope with
                 the multiple effects of online romance fraud.
+
+                Over time, self-trust and confidence may grow as you experience healthier responses to your
+                emotional, mental and physical needs and desires in life.
+
                 Counselling and therapy may also be powerful with a non-judgemental, skilled therapist who
                 provides a safe and confidential space to work through your concerns and what is best for
                 you in the future.
-                (Checklist /hyperlink to resources.)
+
                 Learning coping strategies for the future.
                 Healing and recovery with hurtful and life changing experiences is an individual and unique
                 process. Learning about your own needs and vulnerabilities can increase your self-respect
-                and ability to protect yourself in future life.
-                (Red/green flag guide?)</p>
-
-            <b>(How do we want the last bits laid out?)</b>
+                and ability to protect yourself in future life.</p>
         </div>
     </div>
 </body>
 
 <script>
 
-    function fadeSection(event) {
+    //There is a better way of doing this but this works for now
 
-    }
+    $(document).ready(function(){
 
-    $('#landingbutton').click(function (event) {
-        document.getElementById("landing").scrollIntoView();
+        $('html, body').animate({
+            scrollTop: $("#landingSection").offset().top
+        }, 500);
+
+        $('#landingSection').fadeOut("");
+        $('#section1').fadeOut("");
+        $('#section2').fadeOut("");
+        $('#section3').fadeOut("");
+
+        $('#landingSection').fadeIn();
     })
 
+    //Landing
+    $('.landingbutton').click(function (event) {
+        $('#landingSection').fadeOut("");
+        $('#section1').fadeOut("");
+        $('#section2').fadeOut("");
+        $('#section3').fadeOut("");
+
+        $('#landingSection').fadeIn();
+
+        $('html, body').animate({
+            scrollTop: $("#landingSection").offset().top
+        }, 500);
+    })
+
+    //Section 1
     $('#section1button').click(function (event) {
-        document.getElementById("section1").scrollIntoView();
+        $('#landingSection').fadeOut("");
+        $('#section1').fadeOut("");
+        $('#section2').fadeOut("");
+        $('#section3').fadeOut("");
+
+        $('#section1').fadeIn();
+
+        $('html, body').animate({
+            scrollTop: $("#section1").offset().top
+        }, 500);
     })
 
+    //Section 2
     $('#section2button').click(function (event) {
-        document.getElementById("section2").scrollIntoView();
+        $('#landingSection').fadeOut("");
+        $('#section1').fadeOut("");
+        $('#section2').fadeOut("");
+        $('#section3').fadeOut("");
+
+        $('#section2').fadeIn();
+
+        $('html, body').animate({
+            scrollTop: $("#section2").offset().top
+        }, 500);
     })
 
+    //Section 3
     $('#section3button').click(function (event) {
-        document.getElementById("section3").scrollIntoView();
+        $('#landingSection').fadeOut("");
+        $('#section1').fadeOut("");
+        $('#section2').fadeOut("");
+        $('#section3').fadeOut("");
+
+        $('#section3').fadeIn();
+
+        $('html, body').animate({
+            scrollTop: $("#section3").offset().top
+        }, 500);
     })
 
 </script>
